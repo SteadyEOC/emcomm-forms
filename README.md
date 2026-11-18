@@ -81,9 +81,10 @@ const file = writeFlmsg({ form: 'ics213', fields: { inc: 'Drill', to: 'Logistics
 const overTheAir = wrapFlmsg('drill.213', file); // [WRAP:beg]...[WRAP:chksum XXXX][WRAP:end]
 ```
 
-**Untested against a real FLMSG save.** The layout was learned by reading FLMSG 4.0.20's source; line
-endings on Windows, header and field order still need a file FLMSG itself saved. If FLMSG opens one of
-these wrongly, please open an issue with the file (made-up data).
+Files have CRLF line ends, as FLMSG saves them on Windows; pass `lineEnd: 'lf'` for FLMSG on Linux or
+macOS. **ICS-213 and ICS-309 are golden-tested** byte for byte against files FLMSG 4.0.24 saved on Windows.
+Plaintext, CSV and the `[WRAP]` envelope are not yet: their layout comes from reading FLMSG's source.
+If FLMSG opens one of these wrongly, please open an issue with the file (made-up data).
 
 ## Checker
 

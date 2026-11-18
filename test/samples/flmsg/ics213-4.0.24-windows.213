@@ -1,0 +1,19 @@
+<flmsg>4.0.24
+:hdr_ed:22 
+KE7KDQ 20261811224344
+<ics213>
+:inc:16 incident test #1
+:to:14 Jake Wolfstein
+:p1:18 Incident Commander
+:fm:11 John KE7KDQ
+:p2:6 Scribe
+:d1:10 2026-11-18
+:t1:5 1438L
+:sb:11 Test Msg #1
+:s1:7 The Man
+:p3:11 Radio Chief
+:mg:205 This is a testmessgae with some special characters !@#$%&*()_+":?>< and we'll see how it goes. this is a long line without a wrap, at least specifically.
+enter
+alt enter
+special word: Café
+CaféCaféCafé

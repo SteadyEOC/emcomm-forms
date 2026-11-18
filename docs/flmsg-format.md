@@ -118,6 +118,45 @@ into ` DOT `, collapses spaces, then **counts words separated by single spaces**
 N words per line (a setting) and adds `ARL ` to the check when the text has `ARL`. The ARRL rules
 (FSD-218, Methods and Practices) are the spec for our own rule; FLMSG's behaviour is what operators see.
 
+## What the FLMSG manual adds (checked 2026-11-18)
+
+Sources: `flmsg-help.pdf` (manual for 4.0, dated 2025-01-24) and the changelog in `readme.txt`, both from
+w1hkj.org/files/flmsg/. A local copy of the PDF is in `docs\` (git-ignored).
+
+- **Current release is 4.0.24** (2025-06-23). Changes from 4.0.21 to 4.0.24 are build fixes plus one new form
+  (RAFAC F126, in 4.0.22). Nothing touches the file format, wrap or checksum, so the 4.0.20 notes above
+  still hold.
+- The manual's "Headers" section shows a `.p2s` wrap example from FLMSG 1.1.14 (2012) with
+  `[WRAP:chksum A358]`. **It doesn't work as a test vector:** 540 variants (apostrophe type, line breaks,
+  CRLF, trailing newline, what the checksum covers, UTF-8 or Latin-1) never give A358. The PDF text has
+  probably lost exact spacing, or someone edited the example by hand.
+- One fact from it: `:mg:105` matches the text only if the curly apostrophe counts as 3 bytes. So
+  lengths are **UTF-8 byte counts**, at least in 1.1.14. A modern accented sample still needs to confirm
+  this.
+- In 1.1.14 the header value was `W1HKJ 201214042019Z` (no leading newline, `Z` suffix). The manual
+  calls the date "YYYYMMDDMMHH", which matches neither that value nor the 4.0.20 source (`%Y%d%m%H%M%S`).
+  Trust the source, then real 4.0.24 saves.
+- `.f2s` for ICS-213 in the manual's ICS-213 chapter is from 1.0.0b1 (2009, `<tag:len` syntax). It's
+  out of date; 4.x uses `.213` and `:tag:len`.
+- So the open questions (CRLF on Windows, encoding, current header) can only be settled by real
+  4.0.24 saves.
+
+## Settled by real FLMSG 4.0.24 saves (2026-11-18)
+
+Two ICS-213 files John saved on Windows (`test\samples\flmsg\`):
+
+- **Line ends: CRLF**, every line, including line breaks inside a value. **Lengths count each line break
+  as 1 byte** (LF), so a reader must turn CRLF into LF before using them. `writeFlmsg` writes CRLF by
+  default and has `lineEnd: 'lf'`.
+- **Encoding: UTF-8**; lengths are UTF-8 byte counts (`Café` = 5).
+- **Header:** `:hdr_fm:` (written once the message has been Sent) then `:hdr_ed:`. Each value is a
+  newline then `CALL YYYYDDMMhhmmss` in UTC, as the source said. No `Z`.
+- **ICS-213 field order:** `inc to p1 fm p2 d1 t1 sb s1 p3 s2 p4 d2 t2 mg rp`. Each position comes
+  right after its name, and the two long texts come last. (The order in the table below, read from the
+  source, was wrong.)
+- Empty fields are left out; punctuation is stored as-is.
+- The file ends with CRLF after the last value.
+
 ## Corrections to earlier notes
 
 - **ICS-309 is built in** (`.309`, 34 rows). Earlier notes, and a plan to send the 309 as

@@ -1,12 +1,13 @@
 // FLMSG data files (for sending with FLDIGI) and the [WRAP] envelope.
 //
-// UNTESTED AGAINST A REAL FLMSG SAVE. Built from docs/flmsg-format.md: facts read from the FLMSG 4.0.20
-// source (GPL; read only, nothing copied). Still to confirm with files FLMSG itself saved on Windows:
-// CRLF vs LF, UTF-8, header presence, field order. Golden tests replace the made-up ones when samples
-// arrive (rule 3).
+// Layout learned by reading the FLMSG 4.0.20 source (GPL; read only, nothing copied), then checked
+// against ICS-213 files saved by FLMSG 4.0.24 on Windows (2026-11-18; golden tests in
+// test/samples/flmsg/; ICS-309 too). Still to check with real saves: plaintext, CSV form and the [WRAP]
+// export (rule 3).
 //
 // Layout: `<flmsg>VERSION`, optional `:hdr_fm:` / `:hdr_ed:` header fields, the form tag line, then one
-// `:tag:LENGTH VALUE` line per non-empty field, LENGTH in UTF-8 bytes, no escaping, LF line ends.
+// `:tag:LENGTH VALUE` line per non-empty field, LENGTH in UTF-8 bytes, no escaping. FLMSG on Windows
+// saves CRLF line ends but counts each line break in a value as one byte (LF), and so does this writer.
 
 import { encodeUtf8 } from '../encoding/bytes.js';
 
@@ -20,14 +21,14 @@ interface FlmsgFormSpec {
 }
 
 /**
- * Field tags per form, in the order FLMSG writes them (from its source). ICS-213: inc incident, to, fm
- * from, p1/p2 their positions, sb subject, d1/t1 date/time, mg message, s1 signature, p3 position,
- * rp reply, d2/t2 reply date/time, s2/p4 replier name/position. ICS-309: inc, dfm/tfm and dto/tto
+ * Field tags per form, in the order FLMSG writes them. ICS-213 (checked against real 4.0.24 saves): inc
+ * incident, to, p1 its position, fm from, p2 its position, d1/t1 date/time, sb subject, s1 approved by,
+ * p3 position, s2/p4 replier name/position, d2/t2 reply date/time, mg message, rp reply. ICS-309: inc, dfm/tfm and dto/tto
  * period from/to, pre prepared by, dtm date/time prepared, net, opr operator; rows tm time, to, fm,
  * msg subject. Plaintext: tt title, to, fm, sb subject, dt date, tm time, mg message. CSV form: mg.
  */
 export const FLMSG_FORMS: Readonly<Record<FlmsgForm, FlmsgFormSpec>> = {
-  ics213: { ext: '.213', fields: ['inc', 'to', 'fm', 'p1', 'p2', 'sb', 'd1', 't1', 'mg', 's1', 'p3', 'rp', 'd2', 't2', 's2', 'p4'] },
+  ics213: { ext: '.213', fields: ['inc', 'to', 'p1', 'fm', 'p2', 'd1', 't1', 'sb', 's1', 'p3', 's2', 'p4', 'd2', 't2', 'mg', 'rp'] },
   ics309: {
     ext: '.309',
     fields: ['inc', 'dfm', 'tfm', 'dto', 'tto', 'pre', 'dtm', 'net', 'opr'],
@@ -53,8 +54,13 @@ export interface FlmsgFile {
   sentBy?: FlmsgStation;
   /** `:hdr_ed:`: stations that edited it, in order. */
   editedBy?: readonly FlmsgStation[];
-  /** Version written on the first line. Default `4.0.20` (the source the format was read from). */
+  /** Version written on the first line. Default `4.0.24` (the release the golden samples came from). */
   version?: string;
+  /**
+   * Line ends between lines: `'crlf'` (default, as FLMSG saves on Windows) or `'lf'` (as on Linux and
+   * macOS). Field lengths always count a line break inside a value as one byte, whichever is chosen.
+   */
+  lineEnd?: 'crlf' | 'lf';
 }
 
 const CALL_RE = /^[A-Za-z0-9/-]{1,20}$/;
@@ -91,14 +97,15 @@ export function flmsgExtension(form: FlmsgForm): string {
 }
 
 /**
- * Write an FLMSG data file (`.213`, `.309`, `.p2s`, `.c2s`). Returns the text with LF line ends;
- * save it as UTF-8.
+ * Write an FLMSG data file (`.213`, `.309`, `.p2s`, `.c2s`). Returns the text with CRLF line ends
+ * (or LF with `lineEnd: 'lf'`); save it as UTF-8.
  *
  * Throws a RangeError for an unknown form or tag, more than 34 ICS-309 rows (use `csvform` for a
  * longer log), a non-string value, a bad call sign, or a value that contains the text of a tag
  * written after it (FLMSG finds each field by searching for its tag, so it would read the wrong place).
  *
- * **Untested against a real FLMSG save**; see the note at the top of this file.
+ * ICS-213 and ICS-309 are golden-tested against real FLMSG saves; the other forms are not yet (see the note at the
+ * top of this file).
  */
 export function writeFlmsg(file: FlmsgFile): string {
   const spec = FLMSG_FORMS[file?.form];
@@ -147,13 +154,15 @@ export function writeFlmsg(file: FlmsgFile): string {
     }
   }
 
-  const version = file.version ?? '4.0.20';
+  const version = file.version ?? '4.0.24';
+  const lineEnd = file.lineEnd ?? 'crlf';
+  if (lineEnd !== 'crlf' && lineEnd !== 'lf') throw new RangeError(`writeFlmsg: lineEnd must be 'crlf' or 'lf'`);
   if (!/^[0-9][0-9A-Za-z.-]*$/.test(version)) throw new RangeError('writeFlmsg: version must look like 4.0.20');
   let out = `<flmsg>${version}\n`;
   parts.slice(0, headerCount).forEach(([t, v]) => (out += line(t, v)));
   out += `<${file.form}>\n`;
   parts.slice(headerCount).forEach(([t, v]) => (out += line(t, v)));
-  return out;
+  return lineEnd === 'crlf' ? out.replace(/\n/g, '\r\n') : out;
 }
 
 /** CRC-16/MODBUS (reflected poly 0xA001, init 0xFFFF, no final XOR) of some bytes. */
