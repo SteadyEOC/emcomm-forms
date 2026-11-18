@@ -1,0 +1,230 @@
+Mid: EOZFF4IPMW2T
+Body: 1060
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 04:00
+File: 5599 RMS_Express_Form_ICS205 Radio Plan_Viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: ICS 205 - Drill Exercise Alpha - 2026-11-17 17:00
+To: KE7KDQ
+Type: Private
+
+
+
+1. Incident Name:	Drill Exercise Alpha
+2. Date & Time Prepared:	2026-11-17 17:00
+
+3. Operational Period:
+From:	2026-11-17	18:00
+To:	2026-11-18	06:00 
+
+4. BASIC RADIO CHANNEL USE:
+
+ZONE GRP:	CH#:	FUNCTION:	CH NAME:	ASSIGNMENT:	RX FREQ:	N or W:	RX TONE:	TX FREQ:	N or W:	TX TONE:	MODE:	REMARKS:
+1	1	Command	DRILL CMD	Net Control	146.520	W	100.0	146.520	W	100.0	A	Simplex, made-up drill plan
+1	2	Tactical	DRILL TAC	Shelters	147.000	N	123.0	147.600	N	123.0	A	Test repeater
+												
+												
+												
+												
+												
+												
+												
+												
+
+
+--------------------------------------
+5. Special Instructions:
+ 
+Check in on CMD first.
+Use plain language.
+
+--------------------------------------
+6. Approved by:	Pat Tester, COML	Date/Time:	2026-11-17 17:30
+IAP Page:	3
+
+Express Sender:	KE7KDQ
+
+-------------------
+Express Sending Station:	KE7KDQ
+Senders Express Version:	Pat v1.0.1 (2ad31e8)
+Senders Template Version:	ICS205- v 19.5
+[No changes or editing of this message are allowed]
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118040000</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>ICS205 Radio Plan_Viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <activitydatetime1>2026-11-17 17:30</activitydatetime1>
+        <activitydatetime2>2026-11-17 17:00</activitydatetime2>
+        <addattachment>false</addattachment>
+        <assignment1>Net Control</assignment1>
+        <assignment10></assignment10>
+        <assignment2>Shelters</assignment2>
+        <assignment3></assignment3>
+        <assignment4></assignment4>
+        <assignment5></assignment5>
+        <assignment6></assignment6>
+        <assignment7></assignment7>
+        <assignment8></assignment8>
+        <assignment9></assignment9>
+        <attached_file></attached_file>
+        <attached_text></attached_text>
+        <ch1>1</ch1>
+        <ch10></ch10>
+        <ch2>2</ch2>
+        <ch3></ch3>
+        <ch4></ch4>
+        <ch5></ch5>
+        <ch6></ch6>
+        <ch7></ch7>
+        <ch8></ch8>
+        <ch9></ch9>
+        <channelname1>DRILL CMD</channelname1>
+        <channelname10></channelname10>
+        <channelname2>DRILL TAC</channelname2>
+        <channelname3></channelname3>
+        <channelname4></channelname4>
+        <channelname5></channelname5>
+        <channelname6></channelname6>
+        <channelname7></channelname7>
+        <channelname8></channelname8>
+        <channelname9></channelname9>
+        <datefrom>2026-11-17</datefrom>
+        <dateto>2026-11-18</dateto>
+        <doattach>false</doattach>
+        <formtitle></formtitle>
+        <function1>Command</function1>
+        <function10></function10>
+        <function2>Tactical</function2>
+        <function3></function3>
+        <function4></function4>
+        <function5></function5>
+        <function6></function6>
+        <function7></function7>
+        <function8></function8>
+        <function9></function9>
+        <iap_page>3</iap_page>
+        <incident_name>Drill Exercise Alpha</incident_name>
+        <mode1>A</mode1>
+        <mode10></mode10>
+        <mode2>A</mode2>
+        <mode3></mode3>
+        <mode4></mode4>
+        <mode5></mode5>
+        <mode6></mode6>
+        <mode7></mode7>
+        <mode8></mode8>
+        <mode9></mode9>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <nwmode1>W</nwmode1>
+        <nwmode10></nwmode10>
+        <nwmode2>N</nwmode2>
+        <nwmode3></nwmode3>
+        <nwmode4></nwmode4>
+        <nwmode5></nwmode5>
+        <nwmode6></nwmode6>
+        <nwmode7></nwmode7>
+        <nwmode8></nwmode8>
+        <nwmode9></nwmode9>
+        <parseme></parseme>
+        <preparedname>Pat Tester, COML</preparedname>
+        <remarks1>Simplex, made-up drill plan</remarks1>
+        <remarks10></remarks10>
+        <remarks2>Test repeater</remarks2>
+        <remarks3></remarks3>
+        <remarks4></remarks4>
+        <remarks5></remarks5>
+        <remarks6></remarks6>
+        <remarks7></remarks7>
+        <remarks8></remarks8>
+        <remarks9></remarks9>
+        <rx1>146.520</rx1>
+        <rx10></rx10>
+        <rx2>147.000</rx2>
+        <rx3></rx3>
+        <rx4></rx4>
+        <rx5></rx5>
+        <rx6></rx6>
+        <rx7></rx7>
+        <rx8></rx8>
+        <rx9></rx9>
+        <rxtone1>100.0</rxtone1>
+        <rxtone10></rxtone10>
+        <rxtone2>123.0</rxtone2>
+        <rxtone3></rxtone3>
+        <rxtone4></rxtone4>
+        <rxtone5></rxtone5>
+        <rxtone6></rxtone6>
+        <rxtone7></rxtone7>
+        <rxtone8></rxtone8>
+        <rxtone9></rxtone9>
+        <specialinstructions>Check in on CMD first.&#xD;&#xA;Use plain language.</specialinstructions>
+        <submit>Submit</submit>
+        <templateversion>ICS205- v 19.5</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <timefrom>18:00</timefrom>
+        <timeto>06:00</timeto>
+        <tnwmode1>W</tnwmode1>
+        <tnwmode10></tnwmode10>
+        <tnwmode2>N</tnwmode2>
+        <tnwmode3></tnwmode3>
+        <tnwmode4></tnwmode4>
+        <tnwmode5></tnwmode5>
+        <tnwmode6></tnwmode6>
+        <tnwmode7></tnwmode7>
+        <tnwmode8></tnwmode8>
+        <tnwmode9></tnwmode9>
+        <tx1>146.520</tx1>
+        <tx10></tx10>
+        <tx2>147.600</tx2>
+        <tx3></tx3>
+        <tx4></tx4>
+        <tx5></tx5>
+        <tx6></tx6>
+        <tx7></tx7>
+        <tx8></tx8>
+        <tx9></tx9>
+        <txtone1>100.0</txtone1>
+        <txtone10></txtone10>
+        <txtone2>123.0</txtone2>
+        <txtone3></txtone3>
+        <txtone4></txtone4>
+        <txtone5></txtone5>
+        <txtone6></txtone6>
+        <txtone7></txtone7>
+        <txtone8></txtone8>
+        <txtone9></txtone9>
+        <txtstr></txtstr>
+        <zonegrp1>1</zonegrp1>
+        <zonegrp10></zonegrp10>
+        <zonegrp2>1</zonegrp2>
+        <zonegrp3></zonegrp3>
+        <zonegrp4></zonegrp4>
+        <zonegrp5></zonegrp5>
+        <zonegrp6></zonegrp6>
+        <zonegrp7></zonegrp7>
+        <zonegrp8></zonegrp8>
+        <zonegrp9></zonegrp9>
+    </variables>
+</RMS_Express_Form>

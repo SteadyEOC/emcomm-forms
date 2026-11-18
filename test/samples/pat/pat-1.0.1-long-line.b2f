@@ -1,0 +1,14 @@
+Mid: 5QOQKIPH2R4H
+Body: 427
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/17 06:06
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: Long line test
+To: SMTP:someone@example.com
+Type: Private
+
+Long line follows:
+word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word 
+end

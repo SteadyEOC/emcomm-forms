@@ -1,0 +1,16 @@
+Mid: KB7BWMEBA6W2
+Body: 35
+Cc: SMTP:test@example.com
+Cc: EOC-TEST
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/17 06:06
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: Several recipients
+To: KE7KDQ
+To: EOC-NORTH
+To: SMTP:other@example.org
+Type: Private
+
+Net check-in list attached later.

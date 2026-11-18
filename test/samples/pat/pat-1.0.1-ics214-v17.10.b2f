@@ -1,0 +1,190 @@
+Mid: UFMPM24LEF22
+Body: 1098
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 03:59
+File: 9138 RMS_Express_Form_ICS214_Viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: 214- Drill Exercise Alpha - Pat Tester-2026-11-17 18:00 - 2026-11-17 22:00
+To: KE7KDQ
+Type: Private
+
+ICS214 
+ \
+PAGE # 1
+
+1. Incident or Event Name:	Drill Exercise Alpha
+2. Operational Period: 
+ From:	2026-11-17 18:00 
+ To:	2026-11-17 22:00
+
+3: Name:	Pat Tester
+4: ICS Position:	Radio Operator
+5  Home Agency & Unit:	Test County ARES
+----------------------------------------------
+6. RESOURCES ASSIGNED:
+
+NAME	ICS POSITION	HOME AGENCY
+Sam Example	Net Control	Test County ARES
+Lee Sample	Runner	Test CERT
+		
+		
+		
+		
+		
+		
+
+----------------------------------------------
+7.ACTIVITY LOG OF NOTABLE EVENTS:
+
+DATE & TIME	ACTIVITY
+2026-11-17 18:05	Opened net on the drill repeater.
+2026-11-17 18:40	Sent ICS-213RR for cots & radios <test>.
+2026-11-17 21:55	Closed net; 12 check-ins.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+---------------------------------------------
+4. PREPARED BY:	Pat Tester, Radio Operator
+---------------------------------------------
+
+Express Sending Station:	KE7KDQ
+Senders Express Version:	Pat v1.0.1 (2ad31e8)
+Senders Template Version:	ICS 214 v 17.10
+[No changes or editing of this message are allowed]
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118035855</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>ICS214_Viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <activities1>Opened net on the drill repeater.</activities1>
+        <activities10></activities10>
+        <activities11></activities11>
+        <activities12></activities12>
+        <activities13></activities13>
+        <activities14></activities14>
+        <activities15></activities15>
+        <activities16></activities16>
+        <activities17></activities17>
+        <activities18></activities18>
+        <activities19></activities19>
+        <activities2>Sent ICS-213RR for cots &amp; radios &lt;test&gt;.</activities2>
+        <activities20></activities20>
+        <activities21></activities21>
+        <activities22></activities22>
+        <activities23></activities23>
+        <activities24></activities24>
+        <activities3>Closed net; 12 check-ins.</activities3>
+        <activities4></activities4>
+        <activities5></activities5>
+        <activities6></activities6>
+        <activities7></activities7>
+        <activities8></activities8>
+        <activities9></activities9>
+        <activitydatetime1>2026-11-17 18:05</activitydatetime1>
+        <activitydatetime10></activitydatetime10>
+        <activitydatetime11></activitydatetime11>
+        <activitydatetime12></activitydatetime12>
+        <activitydatetime13></activitydatetime13>
+        <activitydatetime14></activitydatetime14>
+        <activitydatetime15></activitydatetime15>
+        <activitydatetime16></activitydatetime16>
+        <activitydatetime17></activitydatetime17>
+        <activitydatetime18></activitydatetime18>
+        <activitydatetime19></activitydatetime19>
+        <activitydatetime2>2026-11-17 18:40</activitydatetime2>
+        <activitydatetime20></activitydatetime20>
+        <activitydatetime21></activitydatetime21>
+        <activitydatetime22></activitydatetime22>
+        <activitydatetime23></activitydatetime23>
+        <activitydatetime24></activitydatetime24>
+        <activitydatetime3>2026-11-17 21:55</activitydatetime3>
+        <activitydatetime4></activitydatetime4>
+        <activitydatetime5></activitydatetime5>
+        <activitydatetime6></activitydatetime6>
+        <activitydatetime7></activitydatetime7>
+        <activitydatetime8></activitydatetime8>
+        <activitydatetime9></activitydatetime9>
+        <datetimefrom>2026-11-17 18:00</datetimefrom>
+        <datetimeto>2026-11-17 22:00</datetimeto>
+        <formtitle></formtitle>
+        <home_agency>Test County ARES</home_agency>
+        <home_agency1>Test County ARES</home_agency1>
+        <home_agency2>Test CERT</home_agency2>
+        <home_agency3></home_agency3>
+        <home_agency4></home_agency4>
+        <home_agency5></home_agency5>
+        <home_agency6></home_agency6>
+        <home_agency7></home_agency7>
+        <home_agency8></home_agency8>
+        <ics_position>Radio Operator</ics_position>
+        <ics_position1>Net Control</ics_position1>
+        <ics_position2>Runner</ics_position2>
+        <ics_position3></ics_position3>
+        <ics_position4></ics_position4>
+        <ics_position5></ics_position5>
+        <ics_position6></ics_position6>
+        <ics_position7></ics_position7>
+        <ics_position8></ics_position8>
+        <incident_name>Drill Exercise Alpha</incident_name>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <name>Pat Tester</name>
+        <name1>Sam Example</name1>
+        <name2>Lee Sample</name2>
+        <name3></name3>
+        <name4></name4>
+        <name5></name5>
+        <name6></name6>
+        <name7></name7>
+        <name8></name8>
+        <page>1</page>
+        <parseme>{&#xD;&#xA;  &#34;parseme2&#34;: &#34;&#34;,&#xD;&#xA;  &#34;txtfiletoread&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Incident_Name&#34;: &#34;Drill Exercise Alpha&#34;,&#xD;&#xA;  &#34;Page&#34;: &#34;1&#34;,&#xD;&#xA;  &#34;FormTitle&#34;: &#34;&#34;,&#xD;&#xA;  &#34;DateTimeFrom&#34;: &#34;2026-11-17 18:00&#34;,&#xD;&#xA;  &#34;DateTimeTo&#34;: &#34;2026-11-17 22:00&#34;,&#xD;&#xA;  &#34;Name&#34;: &#34;Pat Tester&#34;,&#xD;&#xA;  &#34;ICS_Position&#34;: &#34;Radio Operator&#34;,&#xD;&#xA;  &#34;parseme&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency&#34;: &#34;Test County ARES&#34;,&#xD;&#xA;  &#34;Name1&#34;: &#34;Sam Example&#34;,&#xD;&#xA;  &#34;ICS_Position1&#34;: &#34;Net Control&#34;,&#xD;&#xA;  &#34;Home_Agency1&#34;: &#34;Test County ARES&#34;,&#xD;&#xA;  &#34;Name2&#34;: &#34;Lee Sample&#34;,&#xD;&#xA;  &#34;ICS_Position2&#34;: &#34;Runner&#34;,&#xD;&#xA;  &#34;Home_Agency2&#34;: &#34;Test CERT&#34;,&#xD;&#xA;  &#34;Name3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Name4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Name5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Name6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Name7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Name8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ICS_Position8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Home_Agency8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime1&#34;: &#34;2026-11-17 18:05&#34;,&#xD;&#xA;  &#34;Activities1&#34;: &#34;Opened net on the drill repeater.&#34;,&#xD;&#xA;  &#34;ActivityDateTime2&#34;: &#34;2026-11-17 18:40&#34;,&#xD;&#xA;  &#34;Activities2&#34;: &#34;Sent ICS-213RR for cots &amp; radios &lt;test&gt;.&#34;,&#xD;&#xA;  &#34;ActivityDateTime3&#34;: &#34;2026-11-17 21:55&#34;,&#xD;&#xA;  &#34;Activities3&#34;: &#34;Closed net; 12 check-ins.&#34;,&#xD;&#xA;  &#34;ActivityDateTime4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime9&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities9&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime10&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities10&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime11&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities11&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime12&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities12&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime13&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities13&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime14&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities14&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime15&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities15&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime16&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities16&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime17&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities17&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime18&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities18&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime19&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities19&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime20&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities20&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime21&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities21&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime22&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities22&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime23&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities23&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ActivityDateTime24&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Activities24&#34;: &#34;&#34;,&#xD;&#xA;  &#34;PreparedName&#34;: &#34;Pat Tester, Radio Operator&#34;,&#xD;&#xA;  &#34;ResetForm&#34;: &#34;Reset Form &#34;,&#xD;&#xA;  &#34;testCall&#34;: &#34;KE7KDQ&#34;,&#xD;&#xA;  &#34;Templateversion&#34;: &#34;ICS 214 v 17.10&#34;&#xD;&#xA;}</parseme>
+        <parseme2></parseme2>
+        <preparedname>Pat Tester, Radio Operator</preparedname>
+        <submit>Submit</submit>
+        <templateversion>ICS 214 v 17.10</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <txtstr></txtstr>
+    </variables>
+</RMS_Express_Form>

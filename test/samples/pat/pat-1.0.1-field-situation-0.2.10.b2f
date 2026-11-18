@@ -1,0 +1,216 @@
+Mid: AFUCRQZGXJJD
+Body: 1493
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 04:02
+File: 1998 FormData.txt
+File: 5851 RMS_Express_Form_Field Situation Report viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: //WL2K R/ Routine/ Field Situation Report
+To: KE7KDQ
+Type: Private
+
+
+PRECEDENCE: R/ Routine   
+DATE/TIME Group:    
+TASK# FSR-TEST-1
+AGENCY: 
+FROM: KE7KDQ
+TO: KE7KDQ
+INFO (CC): 
+BT
+UNCLASS
+
+SUBJ: Field Situation Report  
+
+1.EMERGENT/LIFE SAFETY Need NO
+Needs: Drill only.
+
+2. City:Seattle  County:King State: WA Territory:
+3. Latitude:47.6205  Longitude:-122.3493   MGRS:10TET4889474326  Location source:
+4a. POTS landlines functioning: [ NO ]  Landlines down (made up).
+4b. VOIP landlines functioning: [ YES ]  
+5a. Cell phone voice calls functioning: [YES ]  
+5b. Cell phone phone texts functioning: [YES ]   
+6. AM/FM Broadcast Stations functioning: [ YES ]  KXXX-TEST on air
+7a. OTA TV functioning: [ YES ]  
+7b. Satellite TV functioning: [ Unknown - N/A ]  
+7c. Cable TV  functioning:[ YES ]  
+8. Public Water Works functioning: [ YES ]  
+9a. Commercial Power functioning: [ NO ]  Outage in test grid.
+9b. Commercial Power Stable: [ NO ] 
+9c. Natural Gas Supply functioning: [ YES ] 
+10. Internet functioning: [ YES ] 
+11a. NOAA Weather Radio functioning: [ YES ]  
+11b. NOAA Weather Radio Audio degraded: [ Unknown - N/A ]  
+12. Additional Comments:  Made-up field situation for a drill.
+Second line: R&R <ok> =41.
+13. POC Pat Tester, 555-0100
+
+BT
+NNNN
+
+[No changes or editing of this message are allowed]
+
+------------------------------------
+Express Sending Station: KE7KDQ
+Express Version: Pat v1.0.1 (2ad31e8)
+Template Version: Field Situation Report V 0.2.10
+Map File Name: Field Situation Report
+
+
+
+
+MapFileName:T=Field Situation Report
+Precedence:M:Z/ Flash,O/ Immediate,P/ Priority,R/ Routine=R/ Routine
+Agency:T=
+Task Number:T=FSR-TEST-1
+Is there is an EMERGENT/LIFE SAFETY Need?:M:YES,NO=NO
+Need: T=Drill only.
+Sender:T=KE7KDQ
+DateTime:T=
+Latitude:T=47.6205
+Longitude:T=-122.3493
+MGRS:T=10TET4889474326  
+Location source:M:GPS,User specified,Form entry,Grid square=
+City:T=Seattle
+County:T=King
+State:T=WA
+Territory:T=
+04a. POTS landlines functioning:M:YES,NO,Unknown - N/A=NO
+04a. POTS Comment:T=Landlines down (made up).
+04b. VOIP functioning:M:YES,NO,Unknown - N/A=YES
+04b. VOIP Comment:T=
+05a. Cell Phones Voice functioning:M:YES,NO,Unknown - N/A=YES
+05a. Cell phone Comment:T=
+05b. Cell Phones text functioning:M:YES,NO,Unknown - N/A=YES
+05b. Cell phone text Comment:T=
+06. AM/FM Broadcast Stations functioning:M:YES,NO,Unknown - N/A=YES
+06. Broadcast Station Comment:T=KXXX-TEST on air
+07a. OTA TV functioning:M:YES,NO,Unknown - N/A=YES
+07a. OTA TV Comment:T=
+07b. Satellite TV functioning:M:YES,NO,Unknown - N/A=Unknown - N/A
+07b. Satellite TV Comment:T=
+07c. Cable TV functioning:M:YES,NO,Unknown - N/A=YES
+07c. Cable TV Comment:T=
+08. Public Water Works functioning:M:YES,NO,Unknown - N/A=YES
+08. Public Water Works note:T=
+09a. Commercial Power functioning:M:YES,NO,Unknown - N/A=NO
+09a. Commercial Power  Comment:T=Outage in test grid.
+09b. Commercial Power Stable:M:YES,NO,Unknown - N/A=NO
+09b. Commercial Power Stable Comment:T=
+09c. Natural Gas Supply functioning:M:YES,NO,Unknown - N/A=YES
+09c. Natural Gas Supply functioning Comment:T=
+10. Internet functioning:M:YES,NO,Unknown - N/A=YES
+10. Internet Comment:T=
+11a. NOAA/NWS Weather Radio functioning:M:YES,NO,Unknown - N/A=YES
+11a. NOAA/NWS Comment:T=
+11b. NOAA/NWS Weather Radio Audio degraded:M:YES,NO,Unknown - N/A=Unknown - N/A
+11b. NOAA/NWS Comment:T=
+12. Additional Comments:T=Made-up field situation for a drill. Second line: R&R <ok> =41.
+13. POC:T=Pat Tester, 555-0100
+
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118040200</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>Field Situation Report viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <amfm>YES</amfm>
+        <cell>YES</cell>
+        <celltext>YES</celltext>
+        <city>Seattle</city>
+        <comm0>Drill only.</comm0>
+        <comm1>Landlines down (made up).</comm1>
+        <comm1a></comm1a>
+        <comm2></comm2>
+        <comm2a></comm2a>
+        <comm3>KXXX-TEST on air</comm3>
+        <comm4></comm4>
+        <comm4b></comm4b>
+        <comm4c></comm4c>
+        <comm5></comm5>
+        <comm6>Outage in test grid.</comm6>
+        <comm6a></comm6a>
+        <comm7></comm7>
+        <comm9c></comm9c>
+        <county>King</county>
+        <extgps>(Not available)</extgps>
+        <formdata>MapFileName:T=Field Situation Report&#xD;&#xA;Precedence:M:Z/ Flash,O/ Immediate,P/ Priority,R/ Routine=R/ Routine&#xD;&#xA;Agency:T=&#xD;&#xA;Task Number:T=FSR-TEST-1&#xD;&#xA;Is there is an EMERGENT/LIFE SAFETY Need?:M:YES,NO=NO&#xD;&#xA;Need: T=Drill only.&#xD;&#xA;Sender:T=KE7KDQ&#xD;&#xA;DateTime:T=&#xD;&#xA;Latitude:T=47.6205&#xD;&#xA;Longitude:T=-122.3493&#xD;&#xA;MGRS:T=10TET4889474326  &#xD;&#xA;Location source:M:GPS,User specified,Form entry,Grid square=&#xD;&#xA;City:T=Seattle&#xD;&#xA;County:T=King&#xD;&#xA;State:T=WA&#xD;&#xA;Territory:T=&#xD;&#xA;04a. POTS landlines functioning:M:YES,NO,Unknown - N/A=NO&#xD;&#xA;04a. POTS Comment:T=Landlines down (made up).&#xD;&#xA;04b. VOIP functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;04b. VOIP Comment:T=&#xD;&#xA;05a. Cell Phones Voice functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;05a. Cell phone Comment:T=&#xD;&#xA;05b. Cell Phones text functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;05b. Cell phone text Comment:T=&#xD;&#xA;06. AM/FM Broadcast Stations functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;06. Broadcast Station Comment:T=KXXX-TEST on air&#xD;&#xA;07a. OTA TV functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;07a. OTA TV Comment:T=&#xD;&#xA;07b. Satellite TV functioning:M:YES,NO,Unknown - N/A=Unknown - N/A&#xD;&#xA;07b. Satellite TV Comment:T=&#xD;&#xA;07c. Cable TV functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;07c. Cable TV Comment:T=&#xD;&#xA;08. Public Water Works functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;08. Public Water Works note:T=&#xD;&#xA;09a. Commercial Power functioning:M:YES,NO,Unknown - N/A=NO&#xD;&#xA;09a. Commercial Power  Comment:T=Outage in test grid.&#xD;&#xA;09b. Commercial Power Stable:M:YES,NO,Unknown - N/A=NO&#xD;&#xA;09b. Commercial Power Stable Comment:T=&#xD;&#xA;09c. Natural Gas Supply functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;09c. Natural Gas Supply functioning Comment:T=&#xD;&#xA;10. Internet functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;10. Internet Comment:T=&#xD;&#xA;11a. NOAA/NWS Weather Radio functioning:M:YES,NO,Unknown - N/A=YES&#xD;&#xA;11a. NOAA/NWS Comment:T=&#xD;&#xA;11b. NOAA/NWS Weather Radio Audio degraded:M:YES,NO,Unknown - N/A=Unknown - N/A&#xD;&#xA;11b. NOAA/NWS Comment:T=&#xD;&#xA;12. Additional Comments:T=Made-up field situation for a drill. Second line: R&amp;R &lt;ok&gt; =41.&#xD;&#xA;13. POC:T=Pat Tester, 555-0100</formdata>
+        <gps>(Not available)</gps>
+        <gps2>47.6205,-122.3493</gps2>
+        <gpslat>47.6205</gpslat>
+        <gpslon>-122.3493</gpslon>
+        <grid>CN87to</grid>
+        <inter>YES</inter>
+        <k0>NO</k0>
+        <k10>YES</k10>
+        <k11>YES</k11>
+        <k11b>Unknown - N/A</k11b>
+        <k3>Unknown - N/A</k3>
+        <k4>NO</k4>
+        <k4a>YES</k4a>
+        <k5>YES</k5>
+        <k5a>YES</k5a>
+        <k6>YES</k6>
+        <k6a>Unknown - N/A</k6a>
+        <k7>YES</k7>
+        <k7b>Unknown - N/A</k7b>
+        <k7c>YES</k7c>
+        <k8>YES</k8>
+        <k9>NO</k9>
+        <k9a>NO</k9a>
+        <kgc9>YES</kgc9>
+        <location_source>{Location_Source}</location_source>
+        <locationsource></locationsource>
+        <mapfilename>Field Situation Report</mapfilename>
+        <message>Made-up field situation for a drill.&#xD;&#xA;Second line: R&amp;R &lt;ok&gt; =41.</message>
+        <mgrs>10TET4889474326</mgrs>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgnr>FSR-TEST-1</msgnr>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto>KE7KDQ</msgto>
+        <natgas>YES</natgas>
+        <noaa>YES</noaa>
+        <noaab>Unknown - N/A</noaab>
+        <noaacom></noaacom>
+        <noaacomb></noaacomb>
+        <parseme></parseme>
+        <poc>Pat Tester, 555-0100</poc>
+        <pots>NO</pots>
+        <powerstable>NO</powerstable>
+        <powerworks>NO</powerworks>
+        <precedence>R/ Routine</precedence>
+        <safetyneed>NO</safetyneed>
+        <state>WA</state>
+        <submit>Submit</submit>
+        <templateversion>Field Situation Report V 0.2.10</templateversion>
+        <territory></territory>
+        <testcall>KE7KDQ</testcall>
+        <testlonfld>0.0000</testlonfld>
+        <timestamp></timestamp>
+        <timestamp2></timestamp2>
+        <title></title>
+        <tvstatus>YES</tvstatus>
+        <tvstatusb>Unknown - N/A</tvstatusb>
+        <tvstatusc>YES</tvstatusc>
+        <txtstr></txtstr>
+        <udtgfld></udtgfld>
+        <voip>YES</voip>
+        <waterworks>YES</waterworks>
+    </variables>
+</RMS_Express_Form>

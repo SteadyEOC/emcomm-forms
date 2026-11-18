@@ -1,0 +1,117 @@
+Mid: RQ6T4BSAYBHF
+Body: 855
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/17 19:04
+File: 740 FormData.txt
+File: 2735 RMS_Express_Form_ICS213_Initial_Viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: ICS-213: Cots and water needed - 2026-11-17 11:15
+To: KE7KDQ
+Type: Private
+
+GENERAL MESSAGE (ICS 213)
+
+** THIS IS AN EXERCISE ** 
+1. Incident Name: Exercise Cascade Quake        
+2. To (Name and Position): Logistics Section Chief
+3. From (Name and Position): Shelter Manager, North Shelter
+4. Subject: Cots and water needed
+5. Date: 2026-11-17
+6. Time: 11:15
+7. Message: 
+
+North Shelter has 40 people and 25 cots.
+Please send 20 cots and 200 litres of drinking water by 16:00 today.
+Road access is from the north gate only.
+
+8. Approved by: Pat Example
+8a. Position/Title: Shelter Manager
+    [Sender: {var MsgSender} Lat: 47.6205, Lon:-122.3493, MGRS: 10TET4889474326; Location source: Form entry]
+------------------------------------
+Express Sending Station: KE7KDQ
+Senders Express Version: Pat v1.0.1 (2ad31e8)
+Senders Template Version: ICS 213  v.43.8
+[No changes or editing of this message are allowed]
+
+MapFileName:T=ICS-213
+0. Form Note:M=** THIS IS AN EXERCISE **
+Organization:T=
+DateTime:T=
+Latitude:T=47.6205 
+Longitude:T=-122.3493
+MGRS:T=10TET4889474326
+Grid:T=CN87to  
+Location source:M:GPS,User specified,Form entry,Grid square,Address lookup=Form entry
+Sender:T=KE7KDQ              
+1. Incident Name:M=Exercise Cascade Quake
+2. To (Name/Position):T=Logistics Section Chief
+3. From:T=Shelter Manager, North Shelter
+4. Subject:T=Cots and water needed
+5. Date:T=2026-11-17
+6. Time:T=11:15
+7. Message:T=North Shelter has 40 people and 25 cots. Please send 20 cots and 200 litres of drinking water by 16:00 today. Road access is from the north gate only.
+8. Approved by:T=Pat Example 
+8b.Position / Title:T=Shelter Manager
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261117190346</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>ICS213_Initial_Viewer.html</display_form>
+        <reply_template>ICS213_SendReply.0</reply_template>
+    </form_parameters>
+    <variables>
+        <addformat></addformat>
+        <approved_name>Pat Example</approved_name>
+        <approved_postitle>Shelter Manager</approved_postitle>
+        <exbtn>true</exbtn>
+        <extgps>(Not available)</extgps>
+        <fm_name>Shelter Manager, North Shelter</fm_name>
+        <formdata></formdata>
+        <formtitle></formtitle>
+        <gps>(Not available)</gps>
+        <gps2>47.6205,-122.3493</gps2>
+        <gpsc>(Not available)</gpsc>
+        <grid>CN87to</grid>
+        <inc_name>Exercise Cascade Quake</inc_name>
+        <isexercise>** THIS IS AN EXERCISE **</isexercise>
+        <location_source>FORM ENTRY</location_source>
+        <locationsource>Form entry</locationsource>
+        <mapfilename>ICS-213</mapfilename>
+        <maplat>47.6205</maplat>
+        <maplon>-122.3493</maplon>
+        <mdate>2026-11-17</mdate>
+        <message>North Shelter has 40 people and 25 cots.&#xD;&#xA;Please send 20 cots and 200 litres of drinking water by 16:00 today.&#xD;&#xA;Road access is from the north gate only.</message>
+        <message2>North Shelter has 40 people and 25 cots.&#xD;&#xA;Please send 20 cots and 200 litres of drinking water by 16:00 today.&#xD;&#xA;Road access is from the north gate only.</message2>
+        <mgrs>10TET4889474326</mgrs>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <mtime>11:15</mtime>
+        <nospaces>10TET4889474326</nospaces>
+        <parseme></parseme>
+        <showdr></showdr>
+        <subjectline>Cots and water needed</subjectline>
+        <submit>Submit</submit>
+        <templateversion>ICS 213  v.43.8</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <themsgsender>{var MsgSender}</themsgsender>
+        <timestamp></timestamp>
+        <timestamp2></timestamp2>
+        <to_name>Logistics Section Chief</to_name>
+        <txtstr></txtstr>
+        <withspaces>10T ET 48894 74326</withspaces>
+    </variables>
+</RMS_Express_Form>

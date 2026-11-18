@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.tmp/
+coverage/
+# Winlink form templates: no open licence, never committed (CONTRIBUTING.md rule 2)
+samples-local/
+# Internal research notes
+docs/format-research-*.md
+# Third-party pages and documents saved for reference (others' copyright; this repo goes public)
+docs/*.html
+docs/*_files/
+docs/*.pdf
+docs/*.htm
+# Samples others sent us: their home position, address and name are in them (rule 7); not public
+docs/*.b2f
+docs/*.txt
+docs/*.xml
+# Private maintainer notes (a separate private repo) and local Claude Code settings
+internal/
+CLAUDE.md
+CLAUDE.local.md

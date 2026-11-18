@@ -1,0 +1,13 @@
+Mid: CAP7WRFXGXV5
+Body: 68
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/17 06:06
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: Plain test message
+To: SMTP:someone@example.com
+Type: Private
+
+Shelter count at 1400: 42 adults, 7 children.
+Needs: water, cots.

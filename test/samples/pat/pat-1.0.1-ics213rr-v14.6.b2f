@@ -1,0 +1,239 @@
+Mid: KZHSMDAFDY6R
+Body: 2717
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 03:58
+File: 7603 RMS_Express_Form_ICS213RR_Viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: ICS 213RR- Drill Exercise Alpha- Request #:RR-TEST-001
+To: KE7KDQ
+Type: Private
+
+ICS 213RR
+
+
+PRIORITY: [Routine]
+
+1. Incident or Event Name: Drill Exercise Alpha
+2. Date/Time: 2026-11-17 20:00
+3. Resource Request #: RR-TEST-001
+   
+REQUESTOR      
+
+4. ORDER:
+  
+-----------------------------------------------
+QTY: 4 Kind: Supply Type: Kit 
+Item Description: Cots, folding, with blankets
+Cost: 200
+
+Needed by Date/Time:
+Requested: 2026-11-18 08:00 
+Estimated: 2026-11-18 10:00
+-----------------------------------------------
+QTY: 2 Kind: Equip Type: Radio 
+Item Description: VHF handheld radios with spare batteries 
+Cost: 0
+
+Needed by Date/Time:
+Requested: 2026-11-18 08:00 
+Estimated: 2026-11-18 12:00
+------------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested:  
+Estimated: 
+-------------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested:  
+Estimated: 
+----------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested:  
+Estimated: 
+-----------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested:  
+Estimated: 
+------------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested:  
+Estimated: 
+------------------------------------------------
+QTY:  Kind:  Type:  
+Item Description:  
+Cost: 
+
+Needed by Date/Time:
+Requested: 
+Estimated: 
+-------------------------------------------------
+
+5. Delivery/Reporting Location:
+Test EOC loading dock, door 3
+
+6. Substitutes and/or Suggested Sources:
+Any equivalent item is fine.
+
+7. Requested by Name/Position: Pat Tester, Logistics
+8. PRIORITY: [Routine]
+9. Section Chief Name: Sam Example, Section Chief
+------------------------------------------------
+
+LOGISTICS
+
+10. Logistics Order #: LOG-42
+
+11. Supplier Phone/Fax/Email: Test Supplier Inc., 555-0100
+12. Supplier Name: Lee Sample
+12A.Point of Contact: Desk 2
+13. Notes: Made-up drill data.
+
+14. Auth Logistics Rep Name: Alex Demo 
+15. Date/Time: 2026-11-17 20:10
+
+16. Order placed by Unit/Section: Robin Test
+    (Person who gets the order)
+------------------------------------------------  
+
+FINANCE
+
+17. Reply/Comments from Finance:
+
+Within drill budget.
+
+18. Finance Section Name: Casey Trial        
+19. Date/Time: 2026-11-17 20:15
+
+------------------------------------
+Express Sending Station: KE7KDQ
+Senders Express Version: Pat v1.0.1 (2ad31e8) 
+Senders Template Version: ICS 213RR v. 14.6
+[No changes or editing of this message are allowed]
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118035742</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>ICS213RR_Viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <activitydatetime1>2026-11-17 20:00</activitydatetime1>
+        <activitydatetime2>2026-11-17 20:10</activitydatetime2>
+        <activitydatetime3>2026-11-17 20:15</activitydatetime3>
+        <authsig>Alex Demo</authsig>
+        <cost1>200</cost1>
+        <cost2>0</cost2>
+        <cost3></cost3>
+        <cost4></cost4>
+        <cost5></cost5>
+        <cost6></cost6>
+        <cost7></cost7>
+        <cost8></cost8>
+        <delivery>Test EOC loading dock, door 3</delivery>
+        <estdatetime1>2026-11-18 10:00</estdatetime1>
+        <estdatetime2>2026-11-18 12:00</estdatetime2>
+        <estdatetime3></estdatetime3>
+        <estdatetime4></estdatetime4>
+        <estdatetime5></estdatetime5>
+        <estdatetime6></estdatetime6>
+        <estdatetime7></estdatetime7>
+        <estdatetime8></estdatetime8>
+        <fincomm>Within drill budget.</fincomm>
+        <finrepname>Casey Trial</finrepname>
+        <formtitle></formtitle>
+        <incname>Drill Exercise Alpha</incname>
+        <item1>Cots, folding, with blankets</item1>
+        <item2>VHF handheld radios with spare batteries</item2>
+        <item3></item3>
+        <item4></item4>
+        <item5></item5>
+        <item6></item6>
+        <item7></item7>
+        <item8></item8>
+        <kind1>Supply</kind1>
+        <kind2>Equip</kind2>
+        <kind3></kind3>
+        <kind4></kind4>
+        <kind5></kind5>
+        <kind6></kind6>
+        <kind7></kind7>
+        <kind8></kind8>
+        <lognum>LOG-42</lognum>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <notes>Made-up drill data.</notes>
+        <orderby>Robin Test</orderby>
+        <parseme>{&#xD;&#xA;  &#34;IncName&#34;: &#34;Drill Exercise Alpha&#34;,&#xD;&#xA;  &#34;ActivityDateTime1&#34;: &#34;2026-11-17 20:00&#34;,&#xD;&#xA;  &#34;txtfiletoread&#34;: &#34;&#34;,&#xD;&#xA;  &#34;FormTitle&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqNum&#34;: &#34;RR-TEST-001&#34;,&#xD;&#xA;  &#34;Qty1&#34;: &#34;4&#34;,&#xD;&#xA;  &#34;Kind1&#34;: &#34;Supply&#34;,&#xD;&#xA;  &#34;Type1&#34;: &#34;Kit&#34;,&#xD;&#xA;  &#34;Item1&#34;: &#34;Cots, folding, with blankets&#34;,&#xD;&#xA;  &#34;ReqDateTime1&#34;: &#34;2026-11-18 08:00&#34;,&#xD;&#xA;  &#34;EstDateTime1&#34;: &#34;2026-11-18 10:00&#34;,&#xD;&#xA;  &#34;Cost1&#34;: &#34;200&#34;,&#xD;&#xA;  &#34;Qty2&#34;: &#34;2&#34;,&#xD;&#xA;  &#34;Kind2&#34;: &#34;Equip&#34;,&#xD;&#xA;  &#34;Type2&#34;: &#34;Radio&#34;,&#xD;&#xA;  &#34;Item2&#34;: &#34;VHF handheld radios with spare batteries&#34;,&#xD;&#xA;  &#34;ReqDateTime2&#34;: &#34;2026-11-18 08:00&#34;,&#xD;&#xA;  &#34;EstDateTime2&#34;: &#34;2026-11-18 12:00&#34;,&#xD;&#xA;  &#34;Cost2&#34;: &#34;0&#34;,&#xD;&#xA;  &#34;Qty3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost3&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Qty4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost4&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Qty5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost5&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Qty6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost6&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Qty7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Qty8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Kind8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Type8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Item8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;ReqDateTime8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;EstDateTime8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Cost8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Delivery&#34;: &#34;Test EOC loading dock, door 3&#34;,&#xD;&#xA;  &#34;Subs1&#34;: &#34;Any equivalent item is fine.&#34;,&#xD;&#xA;  &#34;ReqName&#34;: &#34;Pat Tester, Logistics&#34;,&#xD;&#xA;  &#34;Priority&#34;: &#34;Routine&#34;,&#xD;&#xA;  &#34;SecApp&#34;: &#34;Sam Example, Section Chief&#34;,&#xD;&#xA;  &#34;LogNum&#34;: &#34;LOG-42&#34;,&#xD;&#xA;  &#34;SupInfo&#34;: &#34;Test Supplier Inc., 555-0100&#34;,&#xD;&#xA;  &#34;SupName&#34;: &#34;Lee Sample&#34;,&#xD;&#xA;  &#34;POC&#34;: &#34;Desk 2&#34;,&#xD;&#xA;  &#34;Notes&#34;: &#34;Made-up drill data.&#34;,&#xD;&#xA;  &#34;AuthSig&#34;: &#34;Alex Demo&#34;,&#xD;&#xA;  &#34;ActivityDateTime2&#34;: &#34;2026-11-17 20:10&#34;,&#xD;&#xA;  &#34;OrderBy&#34;: &#34;Robin Test&#34;,&#xD;&#xA;  &#34;FinComm&#34;: &#34;Within drill budget.&#34;,&#xD;&#xA;  &#34;FinRepName&#34;: &#34;Casey Trial&#34;,&#xD;&#xA;  &#34;ActivityDateTime3&#34;: &#34;2026-11-17 20:15&#34;,&#xD;&#xA;  &#34;ResetForm&#34;: &#34;Reset Form &#34;,&#xD;&#xA;  &#34;Templateversion&#34;: &#34;ICS 213RR v. 14.6&#34;,&#xD;&#xA;  &#34;testCall&#34;: &#34;KE7KDQ&#34;&#xD;&#xA;}</parseme>
+        <poc>Desk 2</poc>
+        <priority>Routine</priority>
+        <qty1>4</qty1>
+        <qty2>2</qty2>
+        <qty3></qty3>
+        <qty4></qty4>
+        <qty5></qty5>
+        <qty6></qty6>
+        <qty7></qty7>
+        <qty8></qty8>
+        <reqdatetime1>2026-11-18 08:00</reqdatetime1>
+        <reqdatetime2>2026-11-18 08:00</reqdatetime2>
+        <reqdatetime3></reqdatetime3>
+        <reqdatetime4></reqdatetime4>
+        <reqdatetime5></reqdatetime5>
+        <reqdatetime6></reqdatetime6>
+        <reqdatetime7></reqdatetime7>
+        <reqdatetime8></reqdatetime8>
+        <reqname>Pat Tester, Logistics</reqname>
+        <reqnum>RR-TEST-001</reqnum>
+        <secapp>Sam Example, Section Chief</secapp>
+        <submit>Submit</submit>
+        <subs1>Any equivalent item is fine.</subs1>
+        <supinfo>Test Supplier Inc., 555-0100</supinfo>
+        <supname>Lee Sample</supname>
+        <templateversion>ICS 213RR v. 14.6</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <txtstr></txtstr>
+        <type1>Kit</type1>
+        <type2>Radio</type2>
+        <type3></type3>
+        <type4></type4>
+        <type5></type5>
+        <type6></type6>
+        <type7></type7>
+        <type8></type8>
+    </variables>
+</RMS_Express_Form>

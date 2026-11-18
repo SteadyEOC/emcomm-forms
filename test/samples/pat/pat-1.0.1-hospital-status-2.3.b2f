@@ -1,0 +1,258 @@
+Mid: YRGLK5Q5JUMK
+Body: 2202
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 04:01
+File: 1211 FormData.txt
+File: 12657 RMS_Express_Form_Hospital_Status_Viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: HOSPITAL STATUS REPORT
+To: KE7KDQ
+Type: Private
+
+  HOSPITAL STATUS REPORT
+
+REPORT INFORMATION: 
+** THIS IS AN EXERCISE **
+
+Report Type:	INITIAL	
+
+1. Incident Name:	Drill Exercise Alpha
+2. Date:	2026-11-17 20:45
+3a. Facility Name:	Test General Hospital  
+3b. Facility Type:	Hospital  
+4a. Contact Name:	Pat Tester
+4b. Contact Phone:	555-0100 X 12
+4c. Cell Phone:	555-0101
+4d. Contact Email Address:	drill@example.com
+4e. Street Address: 400 Broad St 
+City: Seattle State: WA  Zip Code:  98109
+Latitude: 47.6205, Longitude:-122.3493, MGRS: 10TET4889474326; Location source: Form entry    
+
+
+5. FACILITY OPERATING STATUS 
+* MODIFIED - Ability to provide essential care services * 
+    
+     STATUS definitions:
+     Normal 
+     Modified partially functional - no assistance needed (explain)
+     Limited partially functional,- Some assistance needed (explain)
+     Impaired- major assistance needed (explain)
+     Not functional major assistance needed (explain)
+--
+Drill: one wing closed.
+
+6. COMMUNICATIONS Impacted	YES
+6a. Email:	NORMAL
+6b. Landline Phone:	IMPAIRED
+6c. Fax:	NORMAL
+6d. Internet:	NORMAL
+6e. Cell Phone:	LIMITED
+6f. Satellite Phone:	NORMAL
+6g. Amateur Radio:	NORMAL
+--
+Landlines down (made up).
+
+7. UTILITIES Impacted	NO
+7a. Power:	NORMAL
+7b. Water:	NORMAL
+7c. Sanitation:	NORMAL
+7d. Heating/Ventilation/AC:	NORMAL
+--
+
+
+8. EVACUATION	NO
+8a.  Evacuating:	NO  
+8b.  Partial Evacuation:	NO  
+8c.  Total Evacuation:	NO   
+8d.  Shelter in place:	NO   
+--
+
+
+9. CASUALTIES	YES
+  Estimated #	1 Immediate injuries = Critical care needed RED 
+  Estimated #	2 Delayed injuries = Moderate care needed YELLOW 
+  Estimated #	5 Minor injuries = Care not needed immediately GREEN 
+  Estimated #	0 Fatalities BLACK = Deceased 
+--
+Drill casualties only.
+10. ADDITIONAL INFORMATION:
+  Internal disaster plan activated?	YES 
+  Facility Command Center activated?	YES
+  Emergency generator power in use?	NO
+  Will you send Resource Request within 4 hours?	YES
+--
+See ICS-213RR RR-TEST-001.
+---
+Express Sending Station:	KE7KDQ
+Senders Template Version:	General Hospital Status 2.3
+Senders Express Version:	Pat v1.0.1 (2ad31e8)
+Map File Name:	General Hospital Status
+
+
+
+
+
+
+
+
+MapFileName:T=General Hospital Status
+DateTime:T=
+Latitude:T=47.6205
+Longitude:T=-122.3493
+MGRS:T=10TET4889474326
+Grid:T=CN87to
+Location source:M:GPS,User specified,Form entry,Grid square,Address lookup=Form entry
+Report Type:T=INITIAL
+Status:M:
+00. Report note:M=** THIS IS AN EXERCISE ** 
+01. Incident Name:M=Drill Exercise Alpha
+02a. Date/Time:T=2026-11-17 20:45
+03. Facility Name: T=Test General Hospital  
+03b. Facility Type: T=Hospital  
+04a. Contact Name: T=Pat Tester
+04b. Contact Phone:T=555-0100
+04c. Extension:T=12
+04d. Cell Phone: T=555-0101
+04e.Street Address:T=400 Broad St
+04e.City:T=Seattle
+04e.State:T=WA
+04e.Zip:T=98109
+04e. Contact Email Address: T=drill@example.com
+05. Facility Operating Status: M:NORMAL,MODIFIED,LIMITED,IMPAIRED,NOT FUNCTIONAL,UNKNOWN=MODIFIED
+06. COMMUNICATIONS Impacted:M:YES,NO=YES
+07. Utilities Impacted:M:YES,NO=NO
+08. EVACUATIONS:M:YES,NO=NO
+09. CASULITIES:M:YES,NO=YES
+10. Internal disaster plan activated:M:YES,NO=YES 
+10a.  Facility Command Center activated:M:YES,NO=YES
+10b.  Emergency generator power in use:M:YES,NO=NO
+10c.  Resource Request within 4 hours:M:YES,NO=YES
+10d. ADDITIONAL INFORMATION: T=See ICS-213RR RR-TEST-001.
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118040122</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>Hospital_Status_Viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <a5a>MODIFIED</a5a>
+        <a6a>NORMAL</a6a>
+        <a6b>IMPAIRED</a6b>
+        <a6c>NORMAL</a6c>
+        <a6d>NORMAL</a6d>
+        <a6e>LIMITED</a6e>
+        <a6f>NORMAL</a6f>
+        <a6g>NORMAL</a6g>
+        <a7a>NORMAL</a7a>
+        <a7b>NORMAL</a7b>
+        <a7c>NORMAL</a7c>
+        <a7d>NORMAL</a7d>
+        <a8a></a8a>
+        <a8b></a8b>
+        <a8c></a8c>
+        <a8d></a8d>
+        <areporttype>INITIAL</areporttype>
+        <attachxml>true</attachxml>
+        <bcommipaired>YES</bcommipaired>
+        <bevac8>NO</bevac8>
+        <bevacconcerns>NO</bevacconcerns>
+        <bfccactive10>YES</bfccactive10>
+        <bgenerator10>NO</bgenerator10>
+        <bpartial8>NO</bpartial8>
+        <bplan10a>YES</bplan10a>
+        <bresiourcerequest10>YES</bresiourcerequest10>
+        <bshelter8>NO</bshelter8>
+        <btherearecausalties>YES</btherearecausalties>
+        <btotal8>NO</btotal8>
+        <butilitiesimpared>NO</butilitiesimpared>
+        <cell4>555-0101</cell4>
+        <city>Seattle</city>
+        <comments10>See ICS-213RR RR-TEST-001.</comments10>
+        <comments5>Drill: one wing closed.</comments5>
+        <comments6>Landlines down (made up).</comments6>
+        <comments7></comments7>
+        <comments8></comments8>
+        <comments9>Drill casualties only.</comments9>
+        <commipaired>YES</commipaired>
+        <commscell>LIMITED</commscell>
+        <commsemail>NORMAL</commsemail>
+        <commsfax>UNKNOWN</commsfax>
+        <commsheart>NORMAL</commsheart>
+        <commsinternet>NORMAL</commsinternet>
+        <commsll>IMPAIRED</commsll>
+        <commssat>NORMAL</commssat>
+        <contact4>Pat Tester</contact4>
+        <contactemail>drill@example.com</contactemail>
+        <contactphone>555-0100</contactphone>
+        <datetime>2026-11-17 20:45</datetime>
+        <delayed9>2</delayed9>
+        <evac8>NO</evac8>
+        <evacconcerns>NO</evacconcerns>
+        <exbtn>true</exbtn>
+        <extgps>(Not available)</extgps>
+        <facility5>MODIFIED</facility5>
+        <facilityname3a>Test General Hospital</facilityname3a>
+        <faciltype>Hospital</faciltype>
+        <factype3b>Hospital</factype3b>
+        <fatalities9>0</fatalities9>
+        <fccactive10>YES</fccactive10>
+        <formdata>MapFileName:T=General Hospital Status&#xD;&#xA;DateTime:T=j2&#xD;&#xA;Latitude:T=j4&#xD;&#xA;Longitude:T=j5&#xD;&#xA;MGRS:T=j6&#xD;&#xA;Grid:T=j7&#xD;&#xA;Location source:M:GPS,User specified,Form entry,Grid square,Address lookup=l6&#xD;&#xA;Report Type:T=aReportType&#xD;&#xA;Status:M:updatenum&#xD;&#xA;00. Report note:M=R1 &#xD;&#xA;01. Incident Name:M=Incident1&#xD;&#xA;02a. Date/Time:T=Datetime&#xD;&#xA;03. Facility Name: T=FacilityName3a  &#xD;&#xA;03b. Facility Type: T=FacilType  &#xD;&#xA;04a. Contact Name: T=Contact4&#xD;&#xA;04b. Contact Phone:T=Contactphone&#xD;&#xA;04c. Extension:T=phoneX&#xD;&#xA;04d. Cell Phone: T=Cell4&#xD;&#xA;04e.Street Address:T=M1&#xD;&#xA;04e.City:T=M2&#xD;&#xA;04e.State:T=M3&#xD;&#xA;04e.Zip:T=M4&#xD;&#xA;04e. Contact Email Address: T=Contactemail&#xD;&#xA;05. Facility Operating Status: M:NORMAL,MODIFIED,LIMITED,IMPAIRED,NOT FUNCTIONAL,UNKNOWN=A5a&#xD;&#xA;06. COMMUNICATIONS Impacted:M:YES,NO=commipaired&#xD;&#xA;07. Utilities Impacted:M:YES,NO=utilitiesimpared&#xD;&#xA;08. EVACUATIONS:M:YES,NO=evacConcerns&#xD;&#xA;09. CASULITIES:M:YES,NO=thereArecausalties&#xD;&#xA;10. Internal disaster plan activated:M:YES,NO=plan10a &#xD;&#xA;10a.  Facility Command Center activated:M:YES,NO=FCCActive10&#xD;&#xA;10b.  Emergency generator power in use:M:YES,NO=generator10&#xD;&#xA;10c.  Resource Request within 4 hours:M:YES,NO=ResourceRreq10&#xD;&#xA;10d. ADDITIONAL INFORMATION: T=Comments10</formdata>
+        <generator10>NO</generator10>
+        <gps>(Not available)</gps>
+        <gps2>47.6205,-122.3493</gps2>
+        <grid>CN87to</grid>
+        <immediate9>1</immediate9>
+        <incident1>Drill Exercise Alpha</incident1>
+        <isexercise>** THIS IS AN EXERCISE **</isexercise>
+        <location_source>FORM ENTRY</location_source>
+        <locationsource>Form entry</locationsource>
+        <mapfilename>General Hospital Status</mapfilename>
+        <maplat>47.6205</maplat>
+        <maplon>-122.3493</maplon>
+        <mgrs>10TET4889474326</mgrs>
+        <minor9>5</minor9>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <othertype></othertype>
+        <parseme>{&#xD;&#xA;  &#34;txtfiletoread&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Title&#34;: &#34; &#34;,&#xD;&#xA;  &#34;exbtn&#34;: 1,&#xD;&#xA;  &#34;IsExercise&#34;: &#34;** THIS IS AN EXERCISE **&#34;,&#xD;&#xA;  &#34;RType&#34;: &#34;INITIAL&#34;,&#xD;&#xA;  &#34;updatenum&#34;: &#34;&#34;,&#xD;&#xA;  &#34;aReportType&#34;: &#34;INITIAL&#34;,&#xD;&#xA;  &#34;ExtGPS&#34;: &#34;(Not available)&#34;,&#xD;&#xA;  &#34;GPS&#34;: &#34;(Not available)&#34;,&#xD;&#xA;  &#34;timestamp&#34;: &#34;&#34;,&#xD;&#xA;  &#34;timestamp2&#34;: &#34;&#34;,&#xD;&#xA;  &#34;attached_file&#34;: &#34;FormData.txt&#34;,&#xD;&#xA;  &#34;Mapfilename&#34;: &#34;General Hospital Status&#34;,&#xD;&#xA;  &#34;attached_text&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Incident1&#34;: &#34;Drill Exercise Alpha&#34;,&#xD;&#xA;  &#34;DateTime&#34;: &#34;2026-11-17 20:45&#34;,&#xD;&#xA;  &#34;FacilityName3a&#34;: &#34;Test General Hospital&#34;,&#xD;&#xA;  &#34;Factype3b&#34;: &#34;Hospital&#34;,&#xD;&#xA;  &#34;Othertype&#34;: &#34;&#34;,&#xD;&#xA;  &#34;FacilType&#34;: &#34;Hospital&#34;,&#xD;&#xA;  &#34;mapLat&#34;: &#34;47.6205&#34;,&#xD;&#xA;  &#34;mapLon&#34;: &#34;-122.3493&#34;,&#xD;&#xA;  &#34;MGRS&#34;: &#34;10TET4889474326&#34;,&#xD;&#xA;  &#34;Grid&#34;: &#34;CN87to&#34;,&#xD;&#xA;  &#34;GPS2&#34;: &#34;47.6205,-122.3493&#34;,&#xD;&#xA;  &#34;locationSource&#34;: &#34;Form entry&#34;,&#xD;&#xA;  &#34;location_source&#34;: &#34;FORM ENTRY&#34;,&#xD;&#xA;  &#34;Contact4&#34;: &#34;Pat Tester&#34;,&#xD;&#xA;  &#34;Contactphone&#34;: &#34;555-0100&#34;,&#xD;&#xA;  &#34;phoneX&#34;: &#34;12&#34;,&#xD;&#xA;  &#34;Cell4&#34;: &#34;555-0101&#34;,&#xD;&#xA;  &#34;Contactemail&#34;: &#34;drill@example.com&#34;,&#xD;&#xA;  &#34;StreetADDRESS&#34;: &#34;400 Broad St&#34;,&#xD;&#xA;  &#34;City&#34;: &#34;Seattle&#34;,&#xD;&#xA;  &#34;State&#34;: &#34;WA&#34;,&#xD;&#xA;  &#34;ZipCode&#34;: &#34;98109&#34;,&#xD;&#xA;  &#34;FACILITY5&#34;: &#34;MODIFIED&#34;,&#xD;&#xA;  &#34;A5a&#34;: &#34;MODIFIED&#34;,&#xD;&#xA;  &#34;Comments5&#34;: &#34;Drill: one wing closed.&#34;,&#xD;&#xA;  &#34;bcommipaired&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;commipaired&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;CommsEmail&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A6a&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;CommsLL&#34;: &#34;IMPAIRED&#34;,&#xD;&#xA;  &#34;A6b&#34;: &#34;IMPAIRED&#34;,&#xD;&#xA;  &#34;CommsFax&#34;: &#34;UNKNOWN&#34;,&#xD;&#xA;  &#34;A6c&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;CommsInternet&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A6d&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;CommsCell&#34;: &#34;LIMITED&#34;,&#xD;&#xA;  &#34;A6e&#34;: &#34;LIMITED&#34;,&#xD;&#xA;  &#34;Commssat&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A6f&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;CommsHeart&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A6g&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;Comments6&#34;: &#34;Landlines down (made up).&#34;,&#xD;&#xA;  &#34;butilitiesimpared&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;utilitiesimpared&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;Utilitiesa&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A7a&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;Utilitiesb&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A7b&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;Utilitiesc&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A7c&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;Utilitiesd&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;A7d&#34;: &#34;NORMAL&#34;,&#xD;&#xA;  &#34;Comments7&#34;: &#34;&#34;,&#xD;&#xA;  &#34;bevacConcerns&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;evacConcerns&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;bEvac8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;Evac8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;b8a&#34;: &#34;&#34;,&#xD;&#xA;  &#34;A8a&#34;: &#34;&#34;,&#xD;&#xA;  &#34;bPartial8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;Partial8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;b8b&#34;: &#34;&#34;,&#xD;&#xA;  &#34;A8b&#34;: &#34;&#34;,&#xD;&#xA;  &#34;bTotal8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;Total8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;b8c&#34;: &#34;&#34;,&#xD;&#xA;  &#34;A8c&#34;: &#34;&#34;,&#xD;&#xA;  &#34;bShelter8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;Shelter8&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;b8d&#34;: &#34;&#34;,&#xD;&#xA;  &#34;A8d&#34;: &#34;&#34;,&#xD;&#xA;  &#34;Comments8&#34;: &#34;&#34;,&#xD;&#xA;  &#34;bthereArecausalties&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;thereArecausalties&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;Immediate9&#34;: &#34;1&#34;,&#xD;&#xA;  &#34;FormData&#34;: &#34;MapFileName:T=General Hospital Status\nDateTime:T=j2\nLatitude:T=j4\nLongitude:T=j5\nMGRS:T=j6\nGrid:T=j7\nLocation source:M:GPS,User specified,Form entry,Grid square,Address lookup=l6\nReport Type:T=aReportType\nStatus:M:updatenum\n00. Report note:M=R1 \n01. Incident Name:M=Incident1\n02a. Date/Time:T=Datetime\n03. Facility Name: T=FacilityName3a  \n03b. Facility Type: T=FacilType  \n04a. Contact Name: T=Contact4\n04b. Contact Phone:T=Contactphone\n04c. Extension:T=phoneX\n04d. Cell Phone: T=Cell4\n04e.Street Address:T=M1\n04e.City:T=M2\n04e.State:T=M3\n04e.Zip:T=M4\n04e. Contact Email Address: T=Contactemail\n05. Facility Operating Status: M:NORMAL,MODIFIED,LIMITED,IMPAIRED,NOT FUNCTIONAL,UNKNOWN=A5a\n06. COMMUNICATIONS Impacted:M:YES,NO=commipaired\n07. Utilities Impacted:M:YES,NO=utilitiesimpared\n08. EVACUATIONS:M:YES,NO=evacConcerns\n09. CASULITIES:M:YES,NO=thereArecausalties\n10. Internal disaster plan activated:M:YES,NO=plan10a \n10a.  Facility Command Center activated:M:YES,NO=FCCActive10\n10b.  Emergency generator power in use:M:YES,NO=generator10\n10c.  Resource Request within 4 hours:M:YES,NO=ResourceRreq10\n10d. ADDITIONAL INFORMATION: T=Comments10&#34;,&#xD;&#xA;  &#34;Delayed9&#34;: &#34;2&#34;,&#xD;&#xA;  &#34;Minor9&#34;: &#34;5&#34;,&#xD;&#xA;  &#34;Fatalities9&#34;: &#34;0&#34;,&#xD;&#xA;  &#34;Comments9&#34;: &#34;Drill casualties only.&#34;,&#xD;&#xA;  &#34;bplan10a&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;plan10a&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;bFCCActive10&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;FCCActive10&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;bgenerator10&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;generator10&#34;: &#34;NO&#34;,&#xD;&#xA;  &#34;bResiourceRequest10&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;ResourceRreq10&#34;: &#34;YES&#34;,&#xD;&#xA;  &#34;Comments10&#34;: &#34;See ICS-213RR RR-TEST-001.&#34;,&#xD;&#xA;  &#34;BtnAttachXML&#34;: 0,&#xD;&#xA;  &#34;AttachXML&#34;: &#34;true&#34;,&#xD;&#xA;  &#34;ResetForm&#34;: &#34;Reset Form &#34;,&#xD;&#xA;  &#34;Templateversion&#34;: &#34;General Hospital Status 2.3&#34;,&#xD;&#xA;  &#34;testCall&#34;: &#34;KE7KDQ&#34;&#xD;&#xA;}</parseme>
+        <partial8>NO</partial8>
+        <phonex>12</phonex>
+        <plan10a>YES</plan10a>
+        <resourcerreq10>YES</resourcerreq10>
+        <rtype>INITIAL</rtype>
+        <shelter8>NO</shelter8>
+        <state>WA</state>
+        <streetaddress>400 Broad St</streetaddress>
+        <submit>Submit</submit>
+        <templateversion>General Hospital Status 2.3</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <therearecausalties>YES</therearecausalties>
+        <timestamp></timestamp>
+        <timestamp2></timestamp2>
+        <title></title>
+        <total8>NO</total8>
+        <txtstr></txtstr>
+        <updatenum></updatenum>
+        <utilitiesa>NORMAL</utilitiesa>
+        <utilitiesb>NORMAL</utilitiesb>
+        <utilitiesc>NORMAL</utilitiesc>
+        <utilitiesd>NORMAL</utilitiesd>
+        <utilitiesimpared>NO</utilitiesimpared>
+        <zipcode>98109</zipcode>
+    </variables>
+</RMS_Express_Form>

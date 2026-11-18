@@ -1,0 +1,11 @@
+{
+  // Tests may use Node; the core (../tsconfig.json) may not.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "rootDir": "..",
+    "noEmit": true
+  },
+  "include": ["../src", "."]
+}

@@ -1,0 +1,178 @@
+Mid: IBHSNPTAW5LY
+Body: 1292
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=ISO-8859-1
+Date: 2026/11/18 04:00
+File: 1737 FormData.txt
+File: 5054 RMS_Express_Form_HICS 251 Facility Status Report_viewer.xml
+From: KE7KDQ
+Mbo: KE7KDQ
+Subject: HICS-251 Drill Exercise Alpha, Test General Hospital, 2026-11-17 20:30
+To: KE7KDQ
+Type: Private
+
+1. INCIDENT NAME:	Drill Exercise Alpha
+PAGE	[1]	OF	[1]
+Express Sender:	KE7KDQ
+
+2. OPERATIONAL PERIOD: #:	[1]
+Date From:	2026-11-17
+Time From:	18:00
+
+Date To:	2026-11-18
+Time To:	06:00
+
+3. Name of Department / Unit Reporting Status Below	Test General Hospital, Facilities	Contact Number:	555-0100  
+Street Address: 400 Broad St  City:Seattle State: WA Zip Code: 98109  
+4. System	5. Status	6. Comments
+4a. Power:	Fully functional	Normal.
+4b. Lighting:	Partially functional	One elevator out (drill).
+4c. Water:	Nonfunctional	Made-up outage.
+4d. Sewage/Toilets:	N/A	
+4e. Nurse Call System:	Fully functional	
+4f. Medical Gases / Oxygen:	Fully functional	
+4g. Communications IT system, telephones, pagers:	Fully functional	
+
+7. Remarks:	Drill only. Test text: R&R <ok>.
+8. PREPARED by:	Pat Tester, Facility Liaison
+   Date/Time:	2026-11-17 20:30
+   FACILITY:	Test General Hospital
+
+9.Radio operator: KE7KDQ
+ Latitude: 47.6205, Longitude:-122.3493, MGRS: 10TET4889474326, Location source: Form entry
+
+------------------------------------
+Express Sending Station:	KE7KDQ
+Senders Express Version:	Pat v1.0.1 (2ad31e8)
+Senders Template Version:	HICS-251 v .6
+Map File Name:	HICS-251 Facility Status Report 
+[No changes or editing of this message are allowed]
+
+
+
+
+MapFileName:T=HICS-251 Facility Status Report 
+DateTime:T=
+Latitude:T=47.6205
+Longitude:T=-122.3493
+Sender:T=KE7KDQ
+MGRS:T=10TET4889474326
+Grid:T=CN87to
+Location source:M:GPS,User specified,Form entry,Grid square,Address lookup=Form entry
+Operator:T=KE7KDQ
+1. Incident Name:T=Drill Exercise Alpha
+2. Operational Period:M=1
+2a. Operational period from:T=2026-11-17 - 18:00
+2a. Operational period to:T=2026-11-18 - 06:00
+3. Department / Unit Reporting:T=Test General Hospital, Facilities
+3b. Department / Unit Contact number:T=555-0100
+3c. Street Address:T=400 Broad St
+3d. City:T=Seattle
+3e. State:T=WA
+3f. Zip:T=98109
+4a. Power:M:Fully functional,Partially functional,Nonfunctional,N/A=Fully functional
+4a. Power Comment:T=Normal.
+4b. Lighting:M:Fully functional,Partially functional,Nonfunctional,N/A=Partially functional
+4b. Lighting Comment:T=One elevator out (drill).
+4c. Water:M:Fully functional,Partially functional,Nonfunctional,N/A=Nonfunctional
+4c. Water comment:T=Made-up outage.
+4d. Sewage/Toilets:M:Fully functional,Partially functional,Nonfunctional,N/A=N/A
+4d. Sewage/Toilets comment:T=
+4e. Nurse Call System:M:Fully functional,Partially functional,Nonfunctional,N/A=Fully functional
+4e. Nurse Call System comment:T=
+4f. Medical Gases / Oxygen:M:Fully functional,Partially functional,Nonfunctional,N/A=Fully functional
+4f. Medical Gases  comment:T=
+4g. Communications IT system, telephones, pagers:M:Fully functional,Partially functional,Nonfunctional,N/A=Fully functional
+4g. Communications IT system comment:T=
+7. Remarks:T=Drill only. Test text: R&R <ok>.
+8a. Prepared by:T=Pat Tester, Facility Liaison
+8b. Prepared Time:T=2026-11-17 20:30
+8c. Facility:T=Test General Hospital
+      
+<?xml version="1.0" encoding="UTF-8"?>
+<RMS_Express_Form>
+    <form_parameters>
+        <xml_file_version>1.0</xml_file_version>
+        <rms_express_version>Pat v1.0.1 (2ad31e8)</rms_express_version>
+        <submission_datetime>20261118040039</submission_datetime>
+        <senders_callsign>KE7KDQ</senders_callsign>
+        <grid_square>CN87sl</grid_square>
+        <display_form>HICS 251 Facility Status Report_viewer.html</display_form>
+        <reply_template></reply_template>
+    </form_parameters>
+    <variables>
+        <addattachment>false</addattachment>
+        <attached_file2></attached_file2>
+        <attached_text2></attached_text2>
+        <city>Seattle</city>
+        <commenta>Normal.</commenta>
+        <commentb>One elevator out (drill).</commentb>
+        <commentc>Made-up outage.</commentc>
+        <commentd></commentd>
+        <commente></commente>
+        <commentf></commentf>
+        <commentg></commentg>
+        <contactnumber>555-0100</contactnumber>
+        <datefrom>2026-11-17</datefrom>
+        <datetime>2026-11-17 20:30</datetime>
+        <dateto>2026-11-18</dateto>
+        <department>Test General Hospital, Facilities</department>
+        <dma>Fully functional</dma>
+        <dmb>Partially functional</dmb>
+        <dmc>Nonfunctional</dmc>
+        <dmd>N/A</dmd>
+        <dme>Fully functional</dme>
+        <dmf>Fully functional</dmf>
+        <dmg>Fully functional</dmg>
+        <doattach>false</doattach>
+        <extgps>(Not available)</extgps>
+        <facility>Test General Hospital</facility>
+        <formdata>MapFileName:T=j1&#xD;&#xA;DateTime:T=j2&#xD;&#xA;Latitude:T=j4&#xD;&#xA;Longitude:T=j5&#xD;&#xA;Sender:T=j6&#xD;&#xA;MGRS:T=j9&#xD;&#xA;Grid:T=j10&#xD;&#xA;Location source:M:GPS,User specified,Form entry,Grid square,Address lookup=l6&#xD;&#xA;Operator:T=Operatorname&#xD;&#xA;1. Incident Name:T=t1&#xD;&#xA;2. Operational Period:M=j11&#xD;&#xA;2a. Operational period from:T=je12&#xD;&#xA;2a. Operational period to:T=j13&#xD;&#xA;3. Department / Unit Reporting:T=j14&#xD;&#xA;3b. Department / Unit Contact number:T=j14a&#xD;&#xA;3c. Street Address:T=M1&#xD;&#xA;3d. City:T=M2&#xD;&#xA;3e. State:T=M3&#xD;&#xA;3f. Zip:T=M4&#xD;&#xA;4a. Power:M:Fully functional,Partially functional,Nonfunctional,N/A=j15&#xD;&#xA;4a. Power Comment:T=j15a&#xD;&#xA;4b. Lighting:M:Fully functional,Partially functional,Nonfunctional,N/A=j16&#xD;&#xA;4b. Lighting Comment:T=j16a&#xD;&#xA;4c. Water:M:Fully functional,Partially functional,Nonfunctional,N/A=j17&#xD;&#xA;4c. Water comment:T=j17a&#xD;&#xA;4d. Sewage/Toilets:M:Fully functional,Partially functional,Nonfunctional,N/A=j18&#xD;&#xA;4d. Sewage/Toilets comment:T=j18a&#xD;&#xA;4e. Nurse Call System:M:Fully functional,Partially functional,Nonfunctional,N/A=j19&#xD;&#xA;4e. Nurse Call System comment:T=j19a&#xD;&#xA;4f. Medical Gases / Oxygen:M:Fully functional,Partially functional,Nonfunctional,N/A=j20&#xD;&#xA;4f. Medical Gases  comment:T=j20a&#xD;&#xA;4g. Communications IT system, telephones, pagers:M:Fully functional,Partially functional,Nonfunctional,N/A=j21&#xD;&#xA;4g. Communications IT system comment:T=j21a&#xD;&#xA;7. Remarks:T=j30&#xD;&#xA;8a. Prepared by:T=j31&#xD;&#xA;8b. Prepared Time:T=j32&#xD;&#xA;8c. Facility:T=j33</formdata>
+        <gps>(Not available)</gps>
+        <gps2>47.6205,-122.3493</gps2>
+        <grid>CN87to</grid>
+        <incident_name>Drill Exercise Alpha</incident_name>
+        <location_source>FORM ENTRY</location_source>
+        <locationsource>Form entry</locationsource>
+        <mapfilename>HICS-251 Facility Status Report</mapfilename>
+        <maplat>47.6205</maplat>
+        <maplon>-122.3493</maplon>
+        <mgrs>10TET4889474326</mgrs>
+        <msgbody></msgbody>
+        <msgcc></msgcc>
+        <msgisacknowledgement>False</msgisacknowledgement>
+        <msgisforward>False</msgisforward>
+        <msgisreply>False</msgisreply>
+        <msgp2p></msgp2p>
+        <msgsender>KE7KDQ</msgsender>
+        <msgseqnum>0</msgseqnum>
+        <msgsubject></msgsubject>
+        <msgto></msgto>
+        <operator>KE7KDQ</operator>
+        <opnum>1</opnum>
+        <page>1</page>
+        <page1>1</page1>
+        <parseme></parseme>
+        <preparedname>Pat Tester, Facility Liaison</preparedname>
+        <remarks>Drill only. Test text: R&amp;R &lt;ok&gt;.</remarks>
+        <selecta>Fully functional</selecta>
+        <selectb>Partially functional</selectb>
+        <selectc>Nonfunctional</selectc>
+        <selectd>N/A</selectd>
+        <selecte>Fully functional</selecte>
+        <selectf>Fully functional</selectf>
+        <selectg>Fully functional</selectg>
+        <state>WA</state>
+        <streetaddress>400 Broad St</streetaddress>
+        <submit>Submit</submit>
+        <templateversion>HICS-251 v .6</templateversion>
+        <testcall>KE7KDQ</testcall>
+        <timefrom>18:00</timefrom>
+        <timestamp></timestamp>
+        <timestamp2></timestamp2>
+        <timeto>06:00</timeto>
+        <txtstr></txtstr>
+        <w3w></w3w>
+        <zipcode>98109</zipcode>
+    </variables>
+</RMS_Express_Form>

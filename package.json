@@ -1,0 +1,72 @@
+{
+  "name": "emcomm-forms",
+  "version": "0.1.1",
+  "description": "Write and strictly check emergency communications (emcomm) form files for amateur radio: Winlink form Save Data for Load Data, Pat .b2f messages, FLMSG files for FLDIGI, and plain text. ICS-213, 213RR, 214, 205, HICS-251, the 309 communications log and more. Zero dependencies; runs in browsers and Node.",
+  "license": "MIT",
+  "author": "John Cornelison",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteadyEOC/emcomm-forms.git"
+  },
+  "keywords": [
+    "winlink",
+    "pat",
+    "flmsg",
+    "ics-213",
+    "emcomm",
+    "amateur-radio",
+    "ham-radio",
+    "ics-309",
+    "fldigi",
+    "save-data",
+    "radiogram",
+    "emergency-communications",
+    "ares",
+    "races",
+    "ics",
+    "incident-command-system",
+    "hics",
+    "winlink-express",
+    "forms"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "examples",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p test/tsconfig.json",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run build && npm run examples",
+    "prepack": "npm run build",
+    "examples": "node examples/ics213-save-data.mjs && node examples/plain-text-and-pat.mjs && node examples/flmsg.mjs && node examples/check.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "bin": {
+    "emcomm-forms": "bin/emcomm-forms.mjs"
+  },
+  "homepage": "https://github.com/SteadyEOC/emcomm-forms#readme",
+  "bugs": {
+    "url": "https://github.com/SteadyEOC/emcomm-forms/issues"
+  }
+}

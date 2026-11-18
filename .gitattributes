@@ -1,0 +1,3 @@
+# Real program output is the spec (rule 3): keep sample bytes exactly, no line-ending conversion.
+test/samples/** -text
+*.b2f -text
