@@ -5,7 +5,7 @@ All notable changes. Versions follow semantic versioning; before 1.0, a minor ve
 ## 0.1.2 (2026-11-18)
 
 - `writeFlmsg`: ICS-213 now matches files saved by FLMSG 4.0.24 on Windows byte for byte (two golden
-  tests; ICS-309 matched with no change). Fields come in FLMSG's real order (`inc to p1 fm p2 d1 t1 sb s1 p3 s2 p4 d2 t2 mg rp`), line
+  tests; the 309 log matched with no change). Fields come in FLMSG's real order (`inc to p1 fm p2 d1 t1 sb s1 p3 s2 p4 d2 t2 mg rp`), line
   ends are CRLF by default (field lengths still count a line break as one byte), and the first line says
   `4.0.24`. New option `lineEnd: 'lf'` for FLMSG on Linux or macOS. FLMSG reads fields in any order, so
   files from 0.1.x still load.

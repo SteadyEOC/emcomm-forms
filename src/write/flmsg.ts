@@ -2,7 +2,7 @@
 //
 // Layout learned by reading the FLMSG 4.0.20 source (GPL; read only, nothing copied), then checked
 // against ICS-213 files saved by FLMSG 4.0.24 on Windows (2026-11-18; golden tests in
-// test/samples/flmsg/; ICS-309 too). Still to check with real saves: plaintext, CSV form and the [WRAP]
+// test/samples/flmsg/; the 309 log too). Still to check with real saves: plaintext, CSV form and the [WRAP]
 // export (rule 3).
 //
 // Layout: `<flmsg>VERSION`, optional `:hdr_fm:` / `:hdr_ed:` header fields, the form tag line, then one
@@ -23,7 +23,7 @@ interface FlmsgFormSpec {
 /**
  * Field tags per form, in the order FLMSG writes them. ICS-213 (checked against real 4.0.24 saves): inc
  * incident, to, p1 its position, fm from, p2 its position, d1/t1 date/time, sb subject, s1 approved by,
- * p3 position, s2/p4 replier name/position, d2/t2 reply date/time, mg message, rp reply. ICS-309: inc, dfm/tfm and dto/tto
+ * p3 position, s2/p4 replier name/position, d2/t2 reply date/time, mg message, rp reply. 309 log: inc, dfm/tfm and dto/tto
  * period from/to, pre prepared by, dtm date/time prepared, net, opr operator; rows tm time, to, fm,
  * msg subject. Plaintext: tt title, to, fm, sb subject, dt date, tm time, mg message. CSV form: mg.
  */
@@ -48,7 +48,7 @@ export interface FlmsgFile {
   form: FlmsgForm;
   /** Field values by tag (see {@link FLMSG_FORMS}). Empty values are left out, as FLMSG does. */
   fields: Readonly<Record<string, string>>;
-  /** ICS-309 log rows, by row tag (`tm`, `to`, `fm`, `msg`); at most 34. */
+  /** 309 log rows, by row tag (`tm`, `to`, `fm`, `msg`); at most 34. */
   rows?: readonly Readonly<Record<string, string>>[];
   /** `:hdr_fm:`: the station that sent it. */
   sentBy?: FlmsgStation;
@@ -100,11 +100,11 @@ export function flmsgExtension(form: FlmsgForm): string {
  * Write an FLMSG data file (`.213`, `.309`, `.p2s`, `.c2s`). Returns the text with CRLF line ends
  * (or LF with `lineEnd: 'lf'`); save it as UTF-8.
  *
- * Throws a RangeError for an unknown form or tag, more than 34 ICS-309 rows (use `csvform` for a
+ * Throws a RangeError for an unknown form or tag, more than 34 rows in a 309 log (use `csvform` for a
  * longer log), a non-string value, a bad call sign, or a value that contains the text of a tag
  * written after it (FLMSG finds each field by searching for its tag, so it would read the wrong place).
  *
- * ICS-213 and ICS-309 are golden-tested against real FLMSG saves; the other forms are not yet (see the note at the
+ * ICS-213 and the 309 log are golden-tested against real FLMSG saves; the other forms are not yet (see the note at the
  * top of this file).
  */
 export function writeFlmsg(file: FlmsgFile): string {

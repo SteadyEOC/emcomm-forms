@@ -82,7 +82,7 @@ const overTheAir = wrapFlmsg('drill.213', file); // [WRAP:beg]...[WRAP:chksum XX
 ```
 
 Files have CRLF line ends, as FLMSG saves them on Windows; pass `lineEnd: 'lf'` for FLMSG on Linux or
-macOS. **ICS-213 and ICS-309 are golden-tested** byte for byte against files FLMSG 4.0.24 saved on Windows.
+macOS. **ICS-213 and the 309 log are golden-tested** byte for byte against files FLMSG 4.0.24 saved on Windows.
 Plaintext, CSV and the `[WRAP]` envelope are not yet: their layout comes from reading FLMSG's source.
 If FLMSG opens one of these wrongly, please open an issue with the file (made-up data).
 
