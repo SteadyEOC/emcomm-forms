@@ -8,7 +8,7 @@ Every writer waits for real samples from the real program (`CONTRIBUTING.md` rul
 
 | Phase | What | Status |
 | --- | --- | --- |
-| **0. Samples** | Real files from Winlink Express, Pat and FLMSG in `test/samples/` (see its README for the wanted list). | Pat and WE in; FLMSG wanted |
+| **0. Samples** | Real files from Winlink Express, Pat and FLMSG in `test/samples/` (see its README for the wanted list). | Pat, WE and FLMSG in |
 | **1a. Save Data file** | `writeSaveData`: the form's own Save Data JSON, which the operator loads into the form with Load Data and submits; WE or Pat then builds the message itself. ICS-213, 213RR, 214, 205, HICS-251, Hospital Status 2.3, Field Situation 0.2.10, byte for byte against real saves. | ✅ 0.1.0. To do: confirm Load Data of writer output in WE; the 309 log once a 309 save exists |
 | **1o. Oracle helper** | Test-only script, outside the published library: load a Save Data file into WE's form with Playwright, submit, export the message, stop at the Outbox (never sends). Makes golden files for later phases. | planned |
 | **1. Text and envelopes** | Helpers (ASCII folding, byte sizes, RFC dates, quoted-printable, XML escape, Maidenhead, wrap, MID); `writeB2f` (byte-exact against Pat 1.0.1); `writePlainText` (own neutral layout, 72 columns). To do: an `OutgoingMessage` model, address normalising, Winlink Express import XML (0.2), long-subject RFC 2047 splitting. | ✅ mostly |
@@ -16,7 +16,7 @@ Every writer waits for real samples from the real program (`CONTRIBUTING.md` rul
 | **2b. Strict checker** | `check(bytes, name)` with its own strict XML parser; layers for Save Data, viewer XML, FormData.txt, Pat `.b2f`, WE export; CLI `emcomm-forms check`. To do: body-vs-variables cross-check, WE import-file layer, JSON Schema export, FLMSG layer, an offline drop-a-file page. | ✅ first cut |
 | **2c. Strictness profiles** | Rule ids, levels, profiles `strict`, `standard`, `lenient`, `emergency` (lets everything through, still logs), `proven` (only what golden samples show arriving intact); per-rule overrides, SARIF output, injected logger. | in progress |
 | **3. 213RR, 309, 214** | Field maps, schemas, 309 paging. | planned |
-| **4. FLMSG** | `writeFlmsg` (`.213`, `.309` up to 34 rows, `.p2s`, `.c2s`) and `wrapFlmsg` (CRC-16/MODBUS), from the format notes in `docs/flmsg-format.md`. **Untested against real FLMSG saves**; golden tests when samples arrive. | first cut |
+| **4. FLMSG** | `writeFlmsg` (`.213`, `.309` up to 34 rows, `.p2s`, `.c2s`) and `wrapFlmsg` (CRC-16/MODBUS), all byte for byte against FLMSG 4.0.24 saves on Windows (golden tests, 0.1.3). Format notes in `docs/flmsg-format.md`. To do: ICS-214, radiogram, checker FLMSG layer. | ✅ |
 | **4b. Other Winlink clients** | Check that Save Data files load unchanged in MacWinlink and Winlink on Android (WoAD). | needs testers |
 | **Publish** | npm 0.1.x; public repo; 1.0 after a real drill. | ✅ npm, public repo |
 | **All ICS forms** | Form definitions as data for the ICS set (201-260, NWCG and HICS variants, ICS Canada EN/FR), the radiogram with its check-count rule, FLMSG built-ins. Each from real samples. | later |

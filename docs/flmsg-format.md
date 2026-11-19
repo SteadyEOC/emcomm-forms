@@ -93,7 +93,7 @@ compress (VISION: no compression; B2F compresses on the link). The checker shoul
 | Amateur | `<radiogram>` | `.m2s` (`.m2t`) | nbr prec hx d1 t1 dt2 dt3 to tel opn msg sig op2 ck sta org ori dlv sto snt dt4 rfm rnt dt5 svc std | - |
 | Amateur | `<iaru>` | `.i2s` (`.i2t`) | nbr prec sta ck org d1 t1 to msg fm rcv d2 t2 sto d3 t3 | - |
 | Amateur | `<netlog>` | `.Fnet` | same tags as the 309 log | 34? |
-| General | `<plaintext>` | `.p2s` (`.p2t`) | tt to fm sb dt tm mg | - |
+| General | `<plaintext>` | `.p2s` (`.p2t`) | tt to fm dt tm sb mg (real 4.0.24 save) | - |
 | General | `<csvform>` | `.c2s` (`.c2t`) | mg (the whole CSV text) | - |
 | General | `<blankform>` | `.b2s` (`.b2t`) | mg | - |
 | General | `<customform>` | `.k2s` (`.k2t`) | mg (custom HTML form's data) | - |

@@ -1,9 +1,9 @@
 // FLMSG data files (for sending with FLDIGI) and the [WRAP] envelope.
 //
 // Layout learned by reading the FLMSG 4.0.20 source (GPL; read only, nothing copied), then checked
-// against ICS-213 files saved by FLMSG 4.0.24 on Windows (2026-11-18; golden tests in
-// test/samples/flmsg/; the 309 log too). Still to check with real saves: plaintext, CSV form and the [WRAP]
-// export (rule 3).
+// against files saved by FLMSG 4.0.24 on Windows (2026-11-18; golden tests in test/samples/flmsg/ for
+// ICS-213, the 309 log, plaintext, CSV form and a File > Wrap > Export). The real plaintext save put
+// `dt tm` before `sb`, not after as the source reading suggested.
 //
 // Layout: `<flmsg>VERSION`, optional `:hdr_fm:` / `:hdr_ed:` header fields, the form tag line, then one
 // `:tag:LENGTH VALUE` line per non-empty field, LENGTH in UTF-8 bytes, no escaping. FLMSG on Windows
@@ -34,7 +34,7 @@ export const FLMSG_FORMS: Readonly<Record<FlmsgForm, FlmsgFormSpec>> = {
     fields: ['inc', 'dfm', 'tfm', 'dto', 'tto', 'pre', 'dtm', 'net', 'opr'],
     rows: { tags: ['tm', 'to', 'fm', 'msg'], max: 34 },
   },
-  plaintext: { ext: '.p2s', fields: ['tt', 'to', 'fm', 'sb', 'dt', 'tm', 'mg'] },
+  plaintext: { ext: '.p2s', fields: ['tt', 'to', 'fm', 'dt', 'tm', 'sb', 'mg'] },
   csvform: { ext: '.c2s', fields: ['mg'] },
 };
 
@@ -180,7 +180,7 @@ export function crc16Modbus(bytes: Uint8Array): number {
  * `[WRAP:beg][WRAP:lf][WRAP:fn NAME]TEXT[WRAP:chksum XXXX][WRAP:end]`. Line ends in the text become LF.
  * The checksum is CRC-16/MODBUS over `[WRAP:fn NAME]` plus the text, as UTF-8 bytes.
  *
- * **Untested against a real FLMSG wrap**; see the note at the top of this file.
+ * Matches a real FLMSG 4.0.24 File > Wrap > Export byte for byte (golden test).
  */
 export function wrapFlmsg(fileName: string, text: string): string {
   if (typeof fileName !== 'string' || !/^[^\s[\]/\\]+$/.test(fileName)) throw new RangeError('wrapFlmsg: file name must have no spaces, brackets or slashes');

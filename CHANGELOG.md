@@ -2,6 +2,14 @@
 
 All notable changes. Versions follow semantic versioning; before 1.0, a minor version may break the API.
 
+## 0.1.3 (2026-11-18)
+
+- `writeFlmsg`: plaintext (`.p2s`) and CSV form (`.c2s`) now match files saved by FLMSG 4.0.24 on
+  Windows byte for byte. Plaintext fields now come in FLMSG's real order, `tt to fm dt tm sb mg` (the
+  subject was before the date). FLMSG reads fields in any order, so older files still load.
+- `wrapFlmsg`: matches a real File > Wrap > Export byte for byte, checksum included. No change was needed.
+- Every FLMSG form this package writes is now golden-tested against real saves.
+
 ## 0.1.2 (2026-11-18)
 
 - `writeFlmsg`: ICS-213 now matches files saved by FLMSG 4.0.24 on Windows byte for byte (two golden

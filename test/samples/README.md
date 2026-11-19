@@ -35,9 +35,9 @@ For each file, add a line below: file name, program and version, how it was made
 - **Pat** (web GUI, then copy from its `out/` folder before connecting): one plain message, one ICS-213 (`.b2f`).
   ✅ 2026-11-17: both done (see Index). 213RR, 214, 205, HICS-251, Hospital Status, Field Situation done 11-17. Still wanted from Pat: 309 Save Data + `.b2f`; a 213
   with awkward text; Load Data of a hand-edited Save Data file.
-- **FLMSG**: ✅ ICS-213 done 2026-11-18 (see `flmsg/`). Still wanted: ICS-214, ICS-309, plaintext, CSV-text with 3 rows, CSV-text with commas and quotes inside a
-  cell, radiogram; the wrapped text FLMSG hands FLDIGI for one of them; and what a second FLDIGI/FLMSG
-  receives (loopback or a second PC).
+- **FLMSG**: ✅ ICS-213, ICS-309, plaintext, CSV form (commas and quotes inside a cell) and a
+  File > Wrap > Export done 2026-11-18 (see `flmsg/`). Still wanted: ICS-214, radiogram, and what a
+  second FLDIGI/FLMSG receives (loopback or a second PC).
 - A note of each program's version.
 
 ## Index
@@ -109,3 +109,7 @@ Made-up data; KE7KDQ is John's own call. Saved with File > Save As, files kept b
 | `flmsg/ics213-4.0.24-windows.213` | ICS-213, Originator tab only. CRLF line ends, but each length counts a line break as one byte; UTF-8 (`Café` = 5 bytes); `:hdr_ed:` only; field order `inc to p1 fm p2 d1 t1 sb s1 p3 mg`; empty fields left out; `!@#$%&*()_+":?><` stored as-is. |
 | `flmsg/ics213-reply-4.0.24-windows.213` | Same 213 with the Responder tab filled (saved as `.213.txt`). Adds `:hdr_fm:` (time of a Send) before `:hdr_ed:`; reply fields go `s2 p4 d2 t2` before `mg`, and `rp` comes last. |
 | `flmsg/ics309-4.0.24-windows.309` | ICS-309, 3 log rows. Header fields `inc dfm tfm dto tto pre dtm net opr`, then each row as `tm[n] to[n] fm[n] msg[n]` with n from 0. Our writer matched it with no change. |
+| `flmsg/ics309-sent-4.0.24-windows.309` | The same 309 saved again later: adds `:hdr_fm:` (22:59:02 UTC) before `:hdr_ed:`. Source of the wrap below. |
+| `flmsg/ics309-4.0.24-windows.309.wrap` | File > Wrap > Export of the file above. `[WRAP:lf]` and LF line ends inside even though the source file has CRLF; checksum `A7AE` (CRC-16/MODBUS over `[WRAP:fn name]` plus the LF text); no line break after `[WRAP:end]`. |
+| `flmsg/plaintext-4.0.24-windows.p2s` | Plaintext form. Field order `tt to fm dt tm sb mg` (the source reading had `sb` before `dt`); UTF-8 `ë` and `®` (lengths in bytes); blank lines inside `mg`. |
+| `flmsg/csvform-4.0.24-windows.c2s` | CSV form: the whole CSV text in one `:mg:` field, a quoted value with a comma inside, a blank line. Its Export CSV button writes the bare text (CRLF, no final line break). |

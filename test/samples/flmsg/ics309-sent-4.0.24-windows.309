@@ -1,0 +1,27 @@
+<flmsg>4.0.24
+:hdr_fm:22 
+KE7KDQ 20261811235902
+:hdr_ed:22 
+KE7KDQ 20261811225735
+<ics309>
+:inc:10 myIncident
+:dfm:10 2026-11-18
+:tfm:5 1454L
+:dto:10 2026-11-18
+:tto:5 1454L
+:pre:8 johnhhfc
+:dtm:17 2026-11-18, 1454L
+:net:10 scribe #54
+:opr:6 KE7KDQ
+:tm[0]:5 1454L
+:to[0]:3 you
+:fm[0]:2 me
+:msg[0]:11 my 1st msg!
+:tm[1]:5 1455L
+:to[1]:5 plans
+:fm[1]:2 ic
+:msg[1]:19 need water & towels
+:tm[2]:5 1456L
+:to[2]:4 logs
+:fm[2]:5 cert1
+:msg[2]:20 msh rcvd, good to go

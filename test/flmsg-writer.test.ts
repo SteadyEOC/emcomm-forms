@@ -1,6 +1,6 @@
-// FLMSG writer. ICS-213 is golden-tested against a real FLMSG 4.0.24 save (test/samples/flmsg/, made-up
-// data); the other forms still use made-up expectations from docs/flmsg-format.md until real saves exist
-// (rule 3). The made-up tests ask for LF line ends to keep the expected strings readable.
+// FLMSG writer, golden-tested against real FLMSG 4.0.24 saves on Windows (test/samples/flmsg/, made-up
+// data): ICS-213, the 309 log, plaintext, CSV form and a File > Wrap > Export. The other tests ask for LF
+// line ends to keep the expected strings readable.
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { crc16Modbus, encodeUtf8, flmsgExtension, formatFlmsgHeaderDate, wrapFlmsg, writeFlmsg } from '../src/index.js';
@@ -99,6 +99,45 @@ describe('writeFlmsg golden: ICS-309 saved by FLMSG 4.0.24 on Windows', () => {
     expect(write309({ ...fields309, net: 'scribe #55' }, rows309)).not.toEqual(real);
     expect(write309(fields309, rows309.slice(0, 2))).not.toEqual(real);
     expect(write309(fields309, [rows309[0]!, { ...rows309[1]!, to: 'ops' }, rows309[2]!])).not.toEqual(real);
+  });
+});
+
+const sample = (name: string) => new Uint8Array(readFileSync(new URL(`./samples/flmsg/${name}`, import.meta.url)));
+const at = (h: number, m: number, s: number) => [{ call: 'KE7KDQ', date: new Date(Date.UTC(2026, 10, 19, h, m, s)) }];
+
+describe('writeFlmsg golden: plaintext and CSV form saved by FLMSG 4.0.24 on Windows', () => {
+  const fieldsP2s = {
+    tt: 'this is the message at hand...',
+    to: 'inc cmdr',
+    fm: 'John, KE7KDQ',
+    dt: '2026-11-18',
+    tm: '1604L',
+    sb: 'This is another test of flmsgëë',
+    mg: 'ëëëë®\n\ntestingV ë®  !(*U@$(&^@_*u-982u49u0==++___(*&*^!^#@@$#\n\n/c/r/l/b/n',
+  };
+  const writeP2s = (fields: Record<string, string>) => encodeUtf8(writeFlmsg({ form: 'plaintext', fields, editedBy: at(0, 6, 19) }));
+
+  it('plaintext matches byte for byte (dt tm before sb; UTF-8 lengths; blank lines in mg)', () => {
+    expect(writeP2s(fieldsP2s)).toEqual(sample('plaintext-4.0.24-windows.p2s'));
+    expect(writeP2s({ ...fieldsP2s, sb: 'This is another test of flmsgee' })).not.toEqual(sample('plaintext-4.0.24-windows.p2s'));
+  });
+
+  const csv = 'Time,To,From,Message\n1454,plans,ic,need water & towels\n1455,logs,"cert1, team 2",msg rcvd\n';
+  const csvText = `${csv}${csv}\n${csv.slice(0, -1)}`;
+
+  it('CSV form matches byte for byte (whole CSV text in one mg field)', () => {
+    expect(encodeUtf8(writeFlmsg({ form: 'csvform', fields: { mg: csvText }, editedBy: at(0, 2, 55) }))).toEqual(sample('csvform-4.0.24-windows.c2s'));
+    expect(encodeUtf8(writeFlmsg({ form: 'csvform', fields: { mg: `${csvText}\n` }, editedBy: at(0, 2, 55) }))).not.toEqual(sample('csvform-4.0.24-windows.c2s'));
+  });
+});
+
+describe('wrapFlmsg golden: File > Wrap > Export from FLMSG 4.0.24 on Windows', () => {
+  it('wraps the real CRLF 309 save into the real .wrap byte for byte (checksum A7AE)', () => {
+    const source = new TextDecoder().decode(sample('ics309-sent-4.0.24-windows.309'));
+    const real = new TextDecoder().decode(sample('ics309-4.0.24-windows.309.wrap'));
+    expect(wrapFlmsg('KE7KDQ-20261118-145721L-4.309', source)).toBe(real);
+    expect(real).toContain('[WRAP:chksum A7AE]');
+    expect(wrapFlmsg('KE7KDQ-20261118-145721L-5.309', source)).not.toBe(real);
   });
 });
 
