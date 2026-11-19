@@ -21,7 +21,7 @@ Compiled 2026-11-16, partly from memory: versions marked (verify) need checking 
 | **Winlink form viewer XML, FormData.txt** | Winlink "Creating your own HTML Forms" (`create_templates.pdf`); samples | Vendor doc + Samples | No schema exists; ours would be the first public one. |
 | **Save Data JSON** (route 5) | Samples only; Bob KM6SO's notes | Samples | Template JavaScript decides; version by template version. |
 | **WE export / import XML** | Samples only | Samples | |
-| **FLMSG / flwrap** | w1hkj.org FLMSG help pages; flmsg source (GPL, read only) | Vendor doc + Samples (pending) | Field-tag escaping undocumented. |
+| **FLMSG / flwrap** | Dave Freese W1HKJ ("W1HKJ & Associates"): https://www.w1hkj.org/ (help: `/flmsg-help/`, downloads: `/files/flmsg/`, SourceForge `fldigi` project); questions to the **nbems** list, https://groups.io/g/nbems (also `linuxham`). Flmsg source (GPL, read only). **Not w1hkj.com:** that old domain now redirects to an unrelated site (kylegentz.com, checked 2026-11-18), though FLMSG 4.0.24's own help links still point there. | Vendor doc + Samples (4.0.24 Windows, 2026-11-18) | Field-tag escaping undocumented. |
 | **ICS forms** | FEMA ICS Forms Booklet (NIMS); NIMS doctrine (FEMA, 2017 3rd ed.); NWCG ICS forms (wildland); HICS guidebook (California EMSA); ICS Canada forms | Vendor doc | Field lists for the form-definition data. |
 | **Radiogram** | ARRL FSD-218 (radiogram form); ARRL NTS Methods and Practices Guidelines; Radio Relay International materials | Vendor doc | Check-count rules belong in the checker. |
 | Maidenhead locator (`src/geo/`) | IARU Region 1 locator description; common algorithm | Standard (de facto) | |
